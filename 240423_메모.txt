@@ -6,9 +6,6 @@ File -> Options -> Accounts -> Git (메일 확인)
 - Show in Explorer = 탐색기
 - View on GitHub = 깃허브 웹
 
-
-
-
 *포토샵 세팅 초기화
 - ctrl + alt + shift
 *포토샵 세팅
@@ -24,4 +21,4 @@ File -> Options -> Accounts -> Git (메일 확인)
 - 인쇄물 Resolution 300 이상 / 웹 Resolution 72
 - 인쇄물 CMYK / 웹 RGB
 
-
+수정해보기
