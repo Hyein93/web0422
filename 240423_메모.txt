@@ -1,7 +1,7 @@
 0423
 
 *github desktop
-- 로그인
+- 로그인 필수
 File -> Options -> Accounts -> Git (메일 확인)
 - Show in Explorer = 탐색기
 - View on GitHub = 깃허브 웹
@@ -10,15 +10,35 @@ File -> Options -> Accounts -> Git (메일 확인)
 - ctrl + alt + shift
 *포토샵 세팅
 - ctrl+K = Preferences
+*백그라운드 레이어 지정
+- 레이어 선택 후 Layer ->New -> Layer from background
+*레이어 위치 이동
+- Layer -> Arrange
 
 - ctrl+N = New Document (새창열기)
+- ctrl+Z = 이전 작업 되돌리기 (취소)
+- ctrl + O = Open (불러오기 열기)
 - ctrl + G = 그룹
 - ctrl + shift + G = 그룹해제
 - sp = 이동
 - ctrl + sp = 돋보기 +
 - ctrl + alt + sp = 돋보기 -
+- ctrl + R = 자
+- View -> New guide = 가이드 선 정확히 생성하기
+(- alt + V + E = 단축키)
+- ctrl + alt + ; = 가이드 잠금/해제
+- ctrl + ; = 가이드 숨김/보이기
 
 - 인쇄물 Resolution 300 이상 / 웹 Resolution 72
 - 인쇄물 CMYK / 웹 RGB
 
-수정해보기
+header 헤더
+section1 섹션1
+section2 섹션2
+footer 푸터
+margin 마진 (여백)
+
+C:\Windowa\Fonts
+무료 : 구글 폰트
+Noto Sans Kr
+본문 서체 크기 14-16t
