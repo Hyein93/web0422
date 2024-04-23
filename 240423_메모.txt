@@ -1,0 +1,5 @@
+0423
+
+*github desktop
+- 로그인
+File -> Options -> Accounts -> Git (메일 확인)
