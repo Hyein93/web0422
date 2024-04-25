@@ -1,0 +1,7 @@
+0425
+
+[피그마]
+반응형 : W 사이즈 확인
+- Phone / Tablet / Desktop
+- https://gs.statcounter.com/
+: 브라우저 사용률 확인 - Chrome으로 제작
