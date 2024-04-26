@@ -2,6 +2,44 @@
 
 [피그마]
 반응형 : W 사이즈 확인
-- Phone / Tablet / Desktop
+- Phone W360 / Tablet W786 / Desktop W1920 -> 평균값
 - https://gs.statcounter.com/
 : 브라우저 사용률 확인 - Chrome으로 제작
+
+프레임 속성
+- 크기 및 모서리 둥글게, 회전, 위치 조정 가능
+- Clip contenet : 프레임에 맞게 이미지 숨김
+
+프레임 컬러
+- Fill : 채우기
+: 기본 채우기, 투명도, 그라데이션, 이미지, 영상 [필터 효과]
+
+디자인 시스템 -> 커뮤니티에서 참고하고나 가지고 올 수 있음
+- Local styles
+: 프로젝트 전체 일관되게 텍스트, 컬러, 이펙트, 그리드 지정
+
+Resources
+Components
+Plugins
+: 추가 기능, 확장 가능
+디자인 작업 할 때 효율성을 높이고 작업 프로세서를 개선할 수 있음
+
+Shift + R = 눈금자 (가이드 라인 생성)
+
+저장
+File - Save local capy = fig 파일로 외부 저장
+
+피그마 미러: https://www.figma.com/mirror
+크롬 확장 앱: Mobile simulator - responsive testing tool
+- 사이트 연동 후 상단 기계버튼 누르기
+- 제작 화면 기기에 제대로 맞는지 확인 가능
+
+
+외부폰트 사용
+
+폰트 크기
+30 / 22 / 15
+제목 조지아 본문 에리얼
+
+천혜의 자연환경,
+요정의 숲 플리트비체
