@@ -1,4 +1,0 @@
-www.naver.com -> domain(도메인)
-192.168.2.19 -> IPv4 -> IPv6
-https -> 프로토콜
-프코토콜://도메인 -> URL(웹 주소)
