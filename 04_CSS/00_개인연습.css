@@ -1,0 +1,15 @@
+@charset "utf-8";
+div {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center
+}
+h1 {
+    color: rgb(3, 3, 77);
+}
+img {
+    width: 300px
+}
+p {
+    color: rgb(114, 116, 122);
+}
