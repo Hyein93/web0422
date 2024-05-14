@@ -8,7 +8,7 @@
 */
 
 /* 레이아웃 유형1의 전체 크기 */
-div {
+.container1 {
     width: 1200px;
     /* 컨텐츠를 가로 가운데 배치 */
     /* margin의 값은 총4개까지 작성 가능 */
@@ -71,8 +71,8 @@ div {
         - width/heigth 크기가 지정 O
  */
 /* .div5~7 레이아웃 유형2의 각 박스 크기와 배경색 */
-div {
-    display: inline;
+.container2 {
+    display: inline-block;
 }
 .div5 {
     background: gold;
