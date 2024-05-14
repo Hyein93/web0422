@@ -71,21 +71,33 @@
         - width/heigth 크기가 지정 O
  */
 /* .div5~7 레이아웃 유형2의 각 박스 크기와 배경색 */
+/* 카멜(낙타) 표기법: 기본 소문자, 두번째 단어의 첫글자는 대문자 */
+.boxSize {
+    width: 400px;
+    height: 200px;
+}
+
+/* 레이아웃 유형2: inline-block */
 .container2 {
     display: inline-block;
 }
 .div5 {
     background: gold;
-    width: 400px;
-    height: 200px;
 }
 .div6 {
     background: hotpink;
-    width: 400px;
-    height: 200px;
 }
 .div7 {
     background: plum;
-    width: 400px;
-    height: 200px;
+}
+/* 레이아웃 유형2: floating (과거방식) */
+/* float: left; -> 왼쪽을 기준으로 가로배치*/
+/* float: rigth -> 오른쪽 기준으로 가로배치*/
+.container3 {
+    float: left;
+}
+
+/* 레이아웃 유형2: flexible (반드시 부모요소로 진행)*/
+.container4 {
+    display: flex;
 }
