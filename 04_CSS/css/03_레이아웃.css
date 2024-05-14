@@ -60,13 +60,15 @@ div {
     1. display: block;
     2. heigth 배치(위에서 아래, 줄바꿈)
     3. width는 100% heigth는 내용 크기
-    4. width/heigth 크기가 지정된다.
+    4. width/heigth 크기가 지정 O
 
     인라인요소
-    1. display: inilne;
-    2. width 배치 (왼쪽에서 오른쪽, 줄바꿈x)
-    3. width/heigth는 내용 크기
-    4. width/heigth 크기가 지정되지 않는다.
+    display: inline;
+        - width 배치 (왼쪽에서 오른쪽, 줄바꿈x)
+        - width/heigth는 내용 크기
+        - width/heigth 크기가 지정 X
+    display: inline-block;
+        - width/heigth 크기가 지정 O
  */
 /* .div5~7 레이아웃 유형2의 각 박스 크기와 배경색 */
 div {
