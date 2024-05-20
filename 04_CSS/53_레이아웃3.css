@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* 플렉스 컨테이너: width: auto; -> width:100% */
+.wrap {
+    display: flex;
+    width: 1200px;
+}
+
+.header {
+    width: 200px;
+    background: #999;
+}
+
+/* 플렉스 컨테이너: width: auto -> width:내용; */
+.rigth_wrap {
+    width: 1000px;
+}
+
+.slide {
+    height: 400px;
+    background: #eee;
+}
+
+.banner {
+    height: 200px;
+    background: #ccc;
+}
+
+.notice {
+    height: 250px;
+    background: #aaa;
+}
