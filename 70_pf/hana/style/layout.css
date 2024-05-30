@@ -60,21 +60,6 @@ h2 {
 }
 
 /* 섹션3 */
-.s3 ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-.s3 li {
-    width: 360px;
-    height: 240px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.s3 li:nth-of-type(4n) {
-    margin: 0;
-}
-
 
 /* 섹션4 */
 

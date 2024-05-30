@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        배경 관련 속성
+        background-image: 배경 이미지
+        background-repeat: 반복 여부 
+        background-position: 위치
+        background-size: 크기 
+        background-color: 컬러
+        background-attachment: 고정여부
+        background (속기형)
+        */
+
+        div {
+            height: 800px;
+
+        }
+        p {
+            height: 600px;
+            border: 1px solid;
+            color: aliceblue;
+
+            background-image: url(/assets/bg.jpg);
+            background-repeat: no-repeat;
+            /* 50% 50% -> 가로 세로 */
+            background-position: 50% 50%;
+            background-size: 100px;
+            background-color: yellowgreen;
+            background-attachment: fixed;
+            /* background: url(경로/이미지명) 반복 위치/크기 색 */
+            background: url(/assets/bg.jpg) no-repeat 50% 70%/cover fixed yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경 이미지: 패럴렉스 스크롤링</h1>
+    <div></div>
+    <div>
+        <p>background-image, background-repeat, background-position, background-size, background-attachment 와 같은 CSS 속성이 있다</p>
+    </div>
+    <div></div>
+</body>
+</html>
