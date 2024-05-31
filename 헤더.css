@@ -6,20 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HSSanTokki20-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: 'GmarketSansMediumr'
 }
@@ -71,7 +57,7 @@ body,h1,h2 {
     text-decoration: none; color: #000;
     text-align: center;
     font-size: 16px;
-    font-family: 'Pretendard-Regular'
+    font-family: 'GmarketSansMediumr'
 }
 a:hover {font-weight: bold;}
 
@@ -113,27 +99,3 @@ a:hover {font-weight: bold;}
     font-family: 'GmarketSansMedium'
 }
 a:hover {font-weight: bold;}
-
-/* 헤더 */
-header {
-    height: 800px;
-    background: url(/assets/bg.jpg) no-repeat 50% 70%/cover fixed;
-}
-h1 {
-    color: #fff;
-    font-size: 70px;
-    font-weight: 100;
-    text-align: center;
-    padding-top: 100px;
-    font-family: 'GmarketSansMedium'
-}
-
-div {
-    height: 800px;
-}
-p { 
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    display: block;
-}
