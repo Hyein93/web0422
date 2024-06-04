@@ -1,0 +1,112 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMediumr'
+}
+
+body,h1,h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+/* 상단 네비 */
+.top {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    height: 36px;
+    border-bottom: 1px solid #000;
+    background: #fff;
+    z-index: 5;
+    display: block;
+}
+.top_box {
+    display: flex;
+    justify-content: flex-end; /* 가로축 설정 */
+    align-items: center; /* 세로축 설정 */
+    position: relative;
+    width: 1004px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+.top_link_list {
+    display: flex;
+    justify-content: flex-start; /* 가로축 설정 */
+    align-items: center; /* 세로축 설정 */
+    height: 24px;
+    padding-right: 60px;
+    font-size: 0;
+    outline: 1px solid skyblue
+}
+
+.top_link_list_1 {
+    display: flex;
+    justify-content: flex-end; /* 가로축 설정 */
+    align-items: center; /* 세로축 설정 */
+    height: 24px;
+    padding-right: 60px;
+    font-size: 0;
+    outline: 1px solid skyblue
+}
+
+.top_link {
+    margin: 0 0 0 19px;
+    outline: 1px solid pink;
+}
+
+.top a {
+    text-decoration: none; color: #000;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'GmarketSansMediumr'
+}
+a:hover {font-weight: bold;}
+
+/* 네비 */
+
+.header_1,.top_box.box {
+    display: flex;
+    align-items: center;/* 가로 세로 중앙 배치! */
+    position: relative;
+    width: 1004px;
+    height: 76px;
+    margin: 0 auto;
+    padding: 0;
+    outline: 1px solid red;}
+
+.logo {
+    width: 102px;
+    height: 20px;
+    outline: 1px solid yellowgreen;
+}
+
+.link_list {
+    position: relative;
+    height: 24px;
+    margin: 2px 0 0 0;
+    font-size: 0;
+    outline: 1px solid skyblue
+}
+
+.link {
+    margin: 0 0 0 42px;
+    outline: 1px solid pink;
+}
+
+.header_1 a {
+    text-decoration: none; color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'GmarketSansMedium'
+}
+a:hover {font-weight: bold;}
