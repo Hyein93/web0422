@@ -1,10 +1,12 @@
 @charset "utf-8";
 
-@import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+@import url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff');
 
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -12,7 +14,7 @@
 }
 
 body {
-    font-family: "Pretendard-Regular", sans-serif;
+    font-family: "GmarketSansMedium", sans-serif;
     line-height: 1.5;
 }
 
@@ -20,16 +22,15 @@ body {
 /* 1depth, mainmenu */
 .main>li>a {
     font-size: 2.0rem;
-    color: #000;
+    color: #192547;
 }
 
 .main li:hover a {
-    color: #000;
-    font-weight: bold;
+    color: #192547;
 }
 
 /* 2depth, submenu */
 .sub li a {
     font-size: 1.4rem;
-    color: #333;
+    color: #ccc;
 }
