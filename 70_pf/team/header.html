@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(reset.css);
+        @import url(typo.css);
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0 auto;
+            height: 80px;
+        }
+
+        .header_inner {
+            display: flex;
+            width: 1260px;
+            margin: 0 auto;
+            height: 80px;
+            padding: 0 30px;
+            align-items: center;
+        }
+
+        .header_inner>a>img {
+            width: 137px;
+        }
+
+        .header_box {
+            width: 137px;
+            margin-left: 88px;
+        }
+
+        .header_box>a>img {
+            height: 22px;
+            margin-left: 20px;
+        }
+
+        .gnb {
+            float: left;
+            width: 750px;
+            margin-left: 88px;
+            height: 80px;
+            box-sizing: border-box;
+        }
+
+        /* 1depth */
+        .main {
+            display: flex;
+            height: 80px;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .main>li {
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .main>li:hover {
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* 2depth */
+        .sub {
+            width: max-content;
+            text-align: start;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            background: #fff;
+            transition: .3s;
+            line-height: 2;
+        }
+
+        .main>li:hover .sub {
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+            color: #000;
+        }
+
+        .sub li:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_inner">
+            <!-- Logo -->
+            <a href="#"><img src="https://images.jinair.com/newHom/images/web/common/logo.svg" alt="home"></a>
+            <!-- //Logo -->
+            <nav class="gnb">
+                <!-- 1depth -->
+                <ul class="main">
+                    <li>
+                        <a href="#">나의예약</a>
+                    </li>
+                    <li>
+                        <a href="#">프로모션/제휴</a>
+                    </li>
+                    <li>
+                        <a href="#">부가서비스</a>
+                    </li>
+                    <li>
+                        <a href="#">운항정보</a>
+                    </li>
+                    <li>
+                        <a href="#">전체메뉴</a>
+                        <!-- 2depth -->
+                        <ul class="sub">
+                            <li><a href="#">예약</a></li>
+                            <li><a href="#">프로모션/제휴</a></li>
+                            <li><a href="#">부가서비스</a></li>
+                            <li><a href="#">운항정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+<div class="header_box">
+        <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_search.svg" alt="home"></a>
+        <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_alarm.svg" alt="home"></a>
+        <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_mypage.svg" alt="home"></a>
+</div>
+        </div>
+    </header>
+</body>
+
+</html>
