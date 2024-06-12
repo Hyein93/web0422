@@ -28,7 +28,6 @@
             position: relative;
             width: 1200px;
             height: 223px;
-            border: 1px solid red;
         }
 
         .tabs label {
@@ -39,8 +38,8 @@
             color: #192547;
             cursor: pointer;
             border-radius: 12px 12px 0 0;
-            margin-left: -4.4px;
-            border: 1px solid rgba(0, 0, 0, 0.12);
+            margin-left: -4px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
         }
 
         .tabs label:nth-of-type(1) {
@@ -72,6 +71,7 @@
         /* bg-color */
         .tab {
             background: #F9F9F9;
+            border-radius: 0 0 12px 12px;
         }
     </style>
 </head>
@@ -79,17 +79,17 @@
 <body>
     <div class="tabs">
         <input type="radio" name="btn" id="btn1" checked>
-        <label for="btn1">탭1</label>
+        <label for="btn1">예약</label>
         <div class="tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus porro fugit odit, ipsum in
             maxime sint vitae a consectetur. Sequi provident doloribus ex obcaecati animi eos fugiat, distinctio
             pariatur. Maxime.</div>
         <input type="radio" name="btn" id="btn2">
-        <label for="btn2">탭2</label>
+        <label for="btn2">체크인</label>
         <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis laudantium
             quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta molestias reiciendis
             dolorem?</div>
         <input type="radio" name="btn" id="btn3">
-        <label for="btn3">탭3</label>
+        <label for="btn3">예약조회</label>
         <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis laudantium
             quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta molestias reiciendis
             dolorem?</div>
