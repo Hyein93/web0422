@@ -15,35 +15,29 @@
             justify-content: center;
             position: relative;
             text-align: center;
-            border: 1px solid red;
-            height: 620px;
+            height: 615px;
             background: url(section_1_banner.jpg) 0% 60%;
         }
 
         .container_1 {
             justify-content: center;
             align-items: center;
-            width: 1200px;
-            height: 268px;
-            border: 1px solid red;
-        }
-
-        .container_text {
-            justify-content: center;
-            align-items: center;
             width: 900px;
             margin: 0 auto;
             height: 156px;
             margin-top: 32px;
-            margin-bottom: 20px;
-            border: 1px solid red;
         }
+
+        .container_text {
+            margin-top: 50px;
+            margin-bottom: 32px;
+        }
+        
 
         h2 {
             font-size: 45px;
             font-weight: bold;
             color: #fff;
-            margin-top: 40px;
             text-shadow: 4px 2px 8px #192547;
         }
 
@@ -65,62 +59,61 @@
         }
 
         .container_booking {
-            float: left;
             position: absolute;
             width: 1200px;
             height: 223px;
             top: 337px;
         }
 
-        .booking_tab {
-            float: left;
-            position: absolute;
+        .tabs {
+            position: relative;
             width: 1200px;
-            height: 50px;
+            height: 223px;
         }
 
-        .button {
-            float: left;
+        .tabs label {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.5);
             width: 400px;
             height: 50px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 20px 20px 0 0;
-            color: #000;
-            font-size: 19px;
-            height: 50px;
             line-height: 50px;
+            color: #192547;
+            cursor: pointer;
+            border-radius: 12px 12px 0 0;
+            margin-left: -4px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            font-size: 20px;
         }
 
-        .booking_tab .button:hover {
+        .tabs label:nth-of-type(1) {
+            margin-left: 0px;
+        }
+
+        .tabs div {
+            display: none;
+            position: absolute;
+            width: 1200px;
+            height: 173px;
+            padding: 30px;
+        }
+
+        .tabs input {
+            display: none;
+        }
+
+        .tabs input:checked+label {
             background: #192547;
             color: #fff;
         }
 
-        .booking_tab .button a:hover {
-            color: #fff;
+        .tabs input:checked+label+div {
+            display: block;
         }
 
-        .booking_main{
-            float: left;
-            position: absolute;
-            width: 1200px;
-            height: 173px;
-            top: 50px;
-            padding: 30px;
-            background: #f9f9f9;
-            border-radius: 0 0 20px 20px;
-        }
-        .tab_2 {
-            float: left;
-            margin-right: 10px;
-            width: 43px;
-            height: 27px;
-            border-radius: 30px;
-            border: 1px solid #192547;
-        }
-        .tab_2 span {
-            font-size: 13px;
-            color: #192547;
+        /* bg-color */
+        .tab {
+            background: #F9F9F9;
+            border-radius: 0 0 12px 12px;
         }
     </style>
 </head>
@@ -132,41 +125,35 @@
             <!-- 텍스트 슬라이드 로고 (캐러셀) -->
             <div class="container_text">
                 <h2>오키나와 속 진짜 오키나와 @미야코지마</h2>
-                <span>미야코지마/시모시지마 5월 29일 신규취항</span>
+                <span>떠나요! 미야코지마/시모시지마 5월 29일 신규취항</span>
             </div>
             <div class="box"></div>
         </div>
         <div class="container_booking">
-            <div class="booking_tab">
-                <ul>
-                    <li>
-                        <div class="button">예약
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button">체크인
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button">예약조회
-                        </div>
-                    </li>
-                </ul>
-            </div>
             <div class="booking_main">
-                <div class="tab_2">
-                    <span>왕복</span>
+                <div class="tabs">
+                    <input type="radio" name="btn" id="btn1" checked>
+                    <label for="btn1">예약</label>
+                    <div class="tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus porro fugit odit,
+                        ipsum in
+                        maxime sint vitae a consectetur. Sequi provident doloribus ex obcaecati animi eos fugiat,
+                        distinctio
+                        pariatur. Maxime.</div>
+                    <input type="radio" name="btn" id="btn2">
+                    <label for="btn2">체크인</label>
+                    <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis
+                        laudantium
+                        quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta molestias
+                        reiciendis
+                        dolorem?</div>
+                    <input type="radio" name="btn" id="btn3">
+                    <label for="btn3">예약조회</label>
+                    <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis
+                        laudantium
+                        quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta molestias
+                        reiciendis
+                        dolorem?</div>
                 </div>
-                <div class="tab_2">
-                    <span>왕복</span>
-                </div>
-                <div class="tab_2">
-                    <span>왕복</span>
-                </div>
-
-            </div>
-
-        </div>
     </section>
 </body>
 
