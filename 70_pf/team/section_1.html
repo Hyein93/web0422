@@ -10,18 +10,6 @@
         @import url(typo.css);
         @import url(header.css);
 
-        h2 {
-            letter-spacing: 4px;
-            font-weight: 400;
-        }
-
-        b {
-            background: #000;
-            color: #fff;
-            padding: 8px 16px;
-            margin-right: 16px;
-        }
-
         section {
             display: flex;
             justify-content: center;
@@ -32,33 +20,153 @@
             background: url(section_1_banner.jpg) 0% 60%;
         }
 
-        h2 {
-            position: absolute;
-            font-size: 45px;
-            font-weight: 900;
-            width: 900px;
-            height: 156px;
-            line-height: 156px;
-            top: 32px;
-            bottom: 38;
-            color: #fff;
+        .container_1 {
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            height: 268px;
             border: 1px solid red;
         }
 
-        div {
-            display: inline-block;
-            width: 1920px;
-            height: 620px;
+        .container_text {
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            margin: 0 auto;
+            height: 156px;
+            margin-top: 32px;
+            margin-bottom: 20px;
+            border: 1px solid red;
         }
-        
 
+        h2 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 40px;
+            text-shadow: 4px 2px 8px #192547;
+        }
+
+        .container_text span {
+            font-size: 19px;
+            color: #fff;
+            text-shadow: 4px 2px 8px #192547;
+        }
+
+        .box {
+            justify-content: center;
+            align-items: center;
+            width: 68px;
+            margin: auto;
+            height: 28px;
+            background: #192547;
+            border-radius: 12px;
+            opacity: 0.3;
+        }
+
+        .container_booking {
+            float: left;
+            position: absolute;
+            width: 1200px;
+            height: 223px;
+            top: 337px;
+        }
+
+        .booking_tab {
+            float: left;
+            position: absolute;
+            width: 1200px;
+            height: 50px;
+        }
+
+        .button {
+            float: left;
+            width: 400px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 20px 20px 0 0;
+            color: #000;
+            font-size: 19px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .booking_tab .button:hover {
+            background: #192547;
+            color: #fff;
+        }
+
+        .booking_tab .button a:hover {
+            color: #fff;
+        }
+
+        .booking_main{
+            float: left;
+            position: absolute;
+            width: 1200px;
+            height: 173px;
+            top: 50px;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 0 0 20px 20px;
+        }
+        .tab_2 {
+            float: left;
+            margin-right: 10px;
+            width: 43px;
+            height: 27px;
+            border-radius: 30px;
+            border: 1px solid #192547;
+        }
+        .tab_2 span {
+            font-size: 13px;
+            color: #192547;
+        }
     </style>
 </head>
 
 <body>
     <!-- section 태그는 그 안에 h1~h6 제목이 반드시 존재해야 한다. -->
     <section>
-        <h2>오키나와 속 진짜 오키나와 @미야코지마</h2>
+        <div class="container_1">
+            <!-- 텍스트 슬라이드 로고 (캐러셀) -->
+            <div class="container_text">
+                <h2>오키나와 속 진짜 오키나와 @미야코지마</h2>
+                <span>미야코지마/시모시지마 5월 29일 신규취항</span>
+            </div>
+            <div class="box"></div>
+        </div>
+        <div class="container_booking">
+            <div class="booking_tab">
+                <ul>
+                    <li>
+                        <div class="button">예약
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button">체크인
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button">예약조회
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="booking_main">
+                <div class="tab_2">
+                    <span>왕복</span>
+                </div>
+                <div class="tab_2">
+                    <span>왕복</span>
+                </div>
+                <div class="tab_2">
+                    <span>왕복</span>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 </body>
 
