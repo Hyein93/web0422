@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url(reset.css);
-        @import url(typo.css);
-        @import url(header.css);
+        @import url(./style/reset.css);
+        @import url(./style/typo.css);
+        @import url(./style/header.css);
 
         section {
             display: flex;
@@ -16,7 +16,7 @@
             position: relative;
             text-align: center;
             height: 615px;
-            background: url(section_1_banner.jpg) 0% 60%;
+            background: url(./asset/section_1_banner.jpg) no-repeat 0% 60%;
         }
 
         .container_1 {
@@ -32,7 +32,7 @@
             margin-top: 50px;
             margin-bottom: 32px;
         }
-        
+
 
         h2 {
             font-size: 45px;
@@ -115,6 +115,13 @@
             background: #F9F9F9;
             border-radius: 0 0 12px 12px;
         }
+
+        .booking_widget {
+            width: 234px;
+            height: 35px;
+            border-radius: 30px;
+            border: 1px solid #192547;
+        }
     </style>
 </head>
 
@@ -134,11 +141,8 @@
                 <div class="tabs">
                     <input type="radio" name="btn" id="btn1" checked>
                     <label for="btn1">예약</label>
-                    <div class="tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus porro fugit odit,
-                        ipsum in
-                        maxime sint vitae a consectetur. Sequi provident doloribus ex obcaecati animi eos fugiat,
-                        distinctio
-                        pariatur. Maxime.</div>
+                    <div class="tab">
+                    </div>
                     <input type="radio" name="btn" id="btn2">
                     <label for="btn2">체크인</label>
                     <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis

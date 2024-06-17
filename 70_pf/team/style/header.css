@@ -51,34 +51,68 @@ header {
 
 .main>li {
     height: 80px;
+    width: 150px;
     text-align: center;
     line-height: 80px;
 }
 
 .main>li:hover {
-    color: #000;
-    font-weight: bold;
+    color: #192547;
+}
+
+.all {
+    position: relative;
 }
 
 /* 2depth */
+.menu {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+}
+
 .sub {
-    width: max-content;
-    text-align: start;
+    display: flex;
+    text-align: center;
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    background: #fff;
-    transition: .3s;
+    border-radius: 10px;
+    transition: opacity .7s;
     line-height: 2;
+    height:0; /* 추가 */
 }
 
 .main>li:hover .sub {
-    height: auto;
     visibility: visible;
     opacity: 1;
-    color: #000;
+    color: #192547;
+    height: auto;
+    border: 1px solid #ccc;
 }
 
-.sub li:hover {
-    font-weight: bold;
+.sub li a:hover {
+    background: #BED600;
+}
+
+.box {
+    width: 150px;
+    height: 500px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-right: 1px solid #CCC;
+    transition: .5s;
+}
+
+.sub li:nth-of-type(5) .box {
+    border-right: none;
+}
+
+.box span {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #192547;
 }
