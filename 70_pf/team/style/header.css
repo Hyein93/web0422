@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 header {
+    z-index: 100;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +10,7 @@ header {
     width: 100%;
     margin: 0 auto;
     height: 80px;
+    background: rgba(0, 0, 0, 0);
 }
 
 .header_inner {
@@ -99,7 +102,7 @@ header {
     width: 150px;
     height: 500px;
     padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.05);
+    background: #f9f9f9;
     border-right: 1px solid #CCC;
     transition: .5s;
 }
