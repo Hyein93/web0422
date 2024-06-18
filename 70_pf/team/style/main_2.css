@@ -47,6 +47,7 @@
     padding: 0 20px 0px 20px;
     top: 275px;
     border-radius: 0 0 12px 12px;
+    font-weight: lighter;
 }
 
 .main_2 span  {
@@ -57,6 +58,7 @@
 
 .main_2 .card .info_desc .price .num {
     color: #BED600;
-    font-weight: 900;
+    font-family: "GmarketSansTTFBold";
+    font-weight: bold;
     margin-left: 8px;
 }

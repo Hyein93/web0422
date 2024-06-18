@@ -6,25 +6,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            margin: 0;
-        }
-
-        img {
-            width: 100%;
-        }
+        @import url(./style/reset.css);
+        @import url(./style/typo.css);
+        @import url(./style/header.css);
+        @import url(./style/main_1.css);
+        @import url(./style/main_2.css);
+        @import url(./style/main_3.css);
     </style>
 </head>
 
 <body>
-    <img src="./asset/index2.png" alt="메인 페이지" usemap="#workmap">
-
-    <map name="workmap">
-        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
-    </map>
-
+    <!-- 헤더 시작 -->
+    <header>
+        <div class="header_inner">
+            <!-- Logo -->
+            <a href="#"><img src="https://images.jinair.com/newHom/images/web/common/logo.svg" alt="home"></a>
+            <!-- //Logo -->
+            <nav class="gnb">
+                <!-- 1depth -->
+                <ul class="main">
+                    <li>
+                        <a href="sub/booking.html">나의예약</a>
+                    </li>
+                    <li>
+                        <a href="sub/promotion.html">프로모션</a>
+                    </li>
+                    <li>
+                        <a href="sub/service.html">부가서비스</a>
+                    </li>
+                    <li>
+                        <a href="sub/flight_info.html">운항정보</a>
+                    </li>
+                    <li class="all">
+                        <a href="#">전체메뉴</a>
+                        <!-- 2depth -->
+                        <div class="menu">
+                            <ul class="sub">
+                                <li>
+                                    <div class="box">
+                                        <span>예약 안내</span><a href="#">항공권 예약</a><br><a href="#">예약/결제 안내</a>
+                                        <span>추천 항공권</span><a href="#">최저가 항공권</a><br><a href="#">맞춤 항공권</a>
+                                        <span>운임 및 수수료</span><a href="#">국내선</a><br><a href="#">국제선</a><br><a
+                                            href="#">비즈니스운임</a>
+                                        <span>할인</span><a href="#">할인쿠폰</a><br><a href="#">프로모션코드</a><br><a
+                                            href="#">신분할인제도</a><br><a href="#">상용우대 프로그램</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>이벤트</span><a href="#">진행중</a><br><a href="#">종료</a><br><a href="#">당첨자
+                                            발표</a>
+                                        <span>제휴</span><a href="#">카드/금융</a><br><a href="#">호텔</a><br><a
+                                            href="#">차량</a><br><a href="#">액티비티</a><br><a href="#">기타 여행상품</a><br><a
+                                            href="#">지니 보딩패스</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>부가서비스 안내</span><a href="#">묶음 할인</a><br><a href="#">좌석</a><br><a
+                                            href="#">수하물</a><br><a href="#">기내식</a><br><a href="#">여행보험</a><br><a
+                                            href="#">JINI PET</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>출도착 안내</span><a href="#">구간 조회</a><br><a href="#">편명 조회</a>
+                                        <span>스케쥴 조회</span><a href="#">왕복</a><br><a href="#">편도</a>
+                                        <span>취항 노선 안내</span><a href="#">국내선</a><br><a href="#">국제선</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>자주 찾는 메뉴</span><a href="#">웹/모바일 체크인</a><br><a href="#">부가서비스 안내</a><br><a
+                                            href="#">국내선 할인제도</a><br><a href="#">할인 쿠폰</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_box">
+                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_search.svg"
+                        alt="search"></a>
+                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_alarm.svg" alt="alarm"></a>
+                <a href="sub/sign_up.html"><img src="https://images.jinair.com/newHom/images/web/icons/icon_mypage.svg"
+                        alt="login"></a>
+            </div>
+        </div>
+    </header>
+    <!-- //헤더 끝 -->
+    <section>
+        <!-- 섹션 1 -->
+        <!-- Visual -->
+        <div class="main_visual">
+            <!-- Main Text Slide -->
+            <div class="container_1">
+                <div class="slide">
+                    <ul>
+                        <li><a href="#" target="_blank">
+                                <img src="/70_pf/team/asset/1.png" alt="slide1">
+                            </a></li>
+                        <li><a href="#" target="_blank">
+                                <img src="/70_pf/team/asset/2.png" alt="slide2">
+                            </a></li>
+                        <li><a href="#" target="_blank">
+                                <img src="/70_pf/team/asset/3.png" alt="slide3">
+                            </a></li>
+                        <img src="/70_pf/team/asset/1.png" alt="slide1">
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- Main Text Slide button -->
+                <div class="x_box"></div>
+            </div>
+            <div class="container_booking">
+                <div class="booking_main">
+                    <div class="tabs">
+                        <input type="radio" name="btn" id="btn1" checked>
+                        <label for="btn1">예약</label>
+                        <div class="tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis
+                            laudantium
+                            quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
+                            molestias
+                            reiciendis
+                            dolorem?
+                        </div>
+                        <input type="radio" name="btn" id="btn2">
+                        <label for="btn2">체크인</label>
+                        <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
+                            nobis
+                            laudantium
+                            quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
+                            molestias
+                            reiciendis
+                            dolorem?</div>
+                        <input type="radio" name="btn" id="btn3">
+                        <label for="btn3">예약조회</label>
+                        <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
+                            nobis
+                            laudantium
+                            quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
+                            molestias
+                            reiciendis
+                            dolorem?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //섹션1 끝 -->
+        <!-- 섹션2 -->
+        <div class="main_2">
+            <h2>최저가 여행</h2>
+            <div class="card">
+                <div class="img_warp">
+                    <img src="/70_pf/team/asset/Untitled-1.png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="place">
+                                <span>부산(PUS)</span>
+                                <img src="/70_pf/team/asset/Line 348.png" alt="에서부터">
+                                <span>오사카</span>
+                            </p>
+                            <p class="trip_date">
+                                <span>
+                                    2024.06.26(수)
+                                </span>
+                            </p>
+                            <p class="price">
+                                <span class="currency">KRW</span>
+                                <span class="num">1,426,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_warp">
+                    <img src="/70_pf/team/asset/Untitled-2.png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="place">
+                                <span>서울/인천(ICN)</span>
+                                <img src="/70_pf/team/asset/Line 348.png" alt="에서부터">
+                                <span>홍콩</span>
+                            </p>
+                            <p class="trip_date">
+                                <span>
+                                    2024.07.18(목)
+                                </span>
+                            </p>
+                            <p class="price">
+                                <span class="currency">KRW</span>
+                                <span class="num">111,600</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_warp">
+                    <img src="/70_pf/team/asset/Untitled-3.png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="place">
+                                <span>서울/인천(ICN)</span>
+                                <img src="/70_pf/team/asset/Line 348.png" alt="에서부터">
+                                <span>보홀</span>
+                            </p>
+                            <p class="trip_date">
+                                <span>
+                                    2024.09.02(월)
+                                </span>
+                            </p>
+                            <p class="price">
+                                <span class="currency">KRW</span>
+                                <span class="num">129,300</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_warp">
+                    <img src="/70_pf/team/asset/Untitled-4.png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="place">
+                                <span>부산(PUS)</span>
+                                <img src="/70_pf/team/asset/Line 348.png" alt="에서부터">
+                                <span>도쿄</span>
+                            </p>
+                            <p class="trip_date">
+                                <span>
+                                    2024.09.10(화)
+                                </span>
+                            </p>
+                            <p class="price">
+                                <span class="currency">KRW</span>
+                                <span class="num">137,800</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //섹션2 끝 -->
+        <!-- 섹션3 -->
+        <div class="main_3">
+            <h2>이벤트</h2>
+            <div class="event_card">
+                <div class="event_img_warp">
+                    <img src="/70_pf/team/asset/main_3(1).png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="title_text">
+                                <span>진에어페이 x 비씨카드</span>
+                            </p>
+                            <p class="sub_text">
+                                <span>1만원 추가 할인 받아요!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_img_warp">
+                    <img src="/70_pf/team/asset/main_3(2).png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="title_text">
+                                <span>진에어 추천 여행지 & 여행룩!</span>
+                            </p>
+                            <p class="sub_text">
+                                <span>최대 15% 할인을 만나보세요!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_img_warp">
+                    <img src="/70_pf/team/asset/main_3(3).png" alt="line">
+                    <div class="info_desc">
+                        <div>
+                            <p class="title_text">
+                                <span>다카마쓰 신규취항 기념!</span>
+                            </p>
+                            <p class="sub_text">
+                                <span>프로모션 코드 10% 추가 할인 받아요.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //섹션3 끝 -->
+    </section>
 </body>
 
 </html>
