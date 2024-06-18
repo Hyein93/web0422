@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기화 */
+        ul { 
+            margin: 0; 
+            padding: 0; 
+            list-style: none; 
+        } 
+        img {
+            vertical-align: top;
+        }
+
+        /* 슬라이드 */
+        .slide { 
+            width: 500px;
+            height: 150px; 
+            overflow: hidden; 
+        } 
+        .slide ul { 
+            animation: slide 12s infinite;
+        } 
+
+        /* animation */
+        @keyframes slide { 
+            /* translateX는 좌우 이동, translateY는 상하 이동 */
+            0% { transform: translateY(0%); } 
+            10% { transform: translateY(-25%); } 
+            33% { transform: translateY(-25%); } 
+            43% { transform: translateY(-50%); } 
+            66% { transform: translateY(-50%); } 
+            76% { transform: translateY(-75%); } 
+            99.99% { transform: translateY(-75%); } 
+            100% { transform: translateY(0%); } 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide">
+        <ul>
+            <li><img src="slide1.jpg" alt="슬라이드 이미지1"></li>
+            <li><img src="slide2.jpg" alt="슬라이드 이미지2"></li>
+            <li><img src="slide3.jpg" alt="슬라이드 이미지3"></li>
+            <li><img src="slide1.jpg" alt="슬라이드 이미지1"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -63,6 +63,10 @@ header {
     color: #192547;
 }
 
+.main>li a:hover {
+    color: #fff;
+}
+
 .all {
     position: relative;
 }
