@@ -44,3 +44,9 @@ body {
     font-size: 1.4rem;
     color: #ccc;
 }
+
+a { color: #192547; }
+a:visited { color: #192547; }
+a:hover { color: #192547;
+    text-decoration: underline; }
+a:active { color: #192547; }
