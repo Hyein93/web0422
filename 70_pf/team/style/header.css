@@ -64,7 +64,7 @@ header {
 }
 
 .main>li a:hover {
-    color: #fff;
+    font-weight: bold;
 }
 
 .all {

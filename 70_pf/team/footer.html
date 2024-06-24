@@ -94,18 +94,62 @@
         .shortcut_fnb_2 {
             width: 1200px;
             margin: 0 auto;
-            display:flex;
-            height: 100px;
+            display: flex;
+            align-items: center;
         }
+
+        .shortcut_fnb_2 h6 {
+            font-size: 16px;
+            margin: 0;
+            color: #192547;
+            font-family: "GmarketSansTTFBold";
+        }
+
         .letter_box {
             width: 230px;
             height: 35px;
             background: #fff;
+            margin-left: 34px;
+            display: flex;
+            align-items: center;
         }
-        .btn{
+
+        .letter_box p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .btn {
             width: 75px;
             height: 35px;
             background: #BED600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .Service_info {
+            width: 750px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+
+        .shortcut_fnb_2 .list {
+            margin: 0px;
+            margin-left: 112px;
+        }
+
+        .shortcut_fnb_2 p {
+            font-size: 14px;
+            margin: 0px;
+            margin-top: 6px;
         }
     </style>
 </head>
@@ -172,13 +216,33 @@
 
         <div class="line"></div>
         <div class="shortcut_fnb_2">
-            <div>뉴스레터 신청</div>
-            <div class="letter_box">메일 주소 입력</div>
-            <div class="btn">신청</div>
+            <h6>뉴스레터 신청</h6>
+            <div class="letter_box">
+                <p>메일 주소 입력</p>
+            </div>
+            <div class="btn">
+                <p>신청</p>
+            </div>
+            <div class="Service_info">
+                <ul>
+                    <li class="list">
+                        <h6>고객서비스센터</h6>
+                        <p>1600-6200, 02-6099-1200</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list">
+                        <h6>업무시간</h6>
+                        <p>오전 09:00 ~ 오후 18:00</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- 컨택트 -->
-        <div class="contacts"></div>
     </div>
+    <!-- 컨택트 -->
+    <div class="contacts"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab accusantium itaque reiciendis fugit autem quod
+        tempora doloremque quasi! Quam reiciendis commodi nobis aperiam optio itaque?</p>
 </footer>
 
 </html>

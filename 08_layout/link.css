@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+
+/* 링크 영역 */
+#link {
+    width: 1340px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid red;
+}
+#link ul {
+    display: flex;
+    justify-content: space-around;
+}
+/* 아이콘 이미지 */
+#link span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    vertical-align: middle;
+    margin-right: 24px;
+}
