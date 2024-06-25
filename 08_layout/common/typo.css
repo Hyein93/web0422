@@ -11,6 +11,9 @@ body {
     color: #666;
 }
 
+h2 {
+    font-size: 1.6rem;
+}
 /* 네비게이션 */
 /* font의 위계 */
 /* 1depth, mainmenu */
@@ -29,8 +32,7 @@ body {
     color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: #333;
-    color: #666;
+/* spot menu */
+.spot menu {
+    font-size: 1.2rem;
 }
