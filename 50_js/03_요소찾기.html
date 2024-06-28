@@ -28,9 +28,12 @@
         <li class="red">목록2 - indax 2</li>
         <li>목록3</li>
         <li id="green">목록1</li>
-        <li class="aqua">목록2</li>
+        <li class="aqua">목록2 - indax 0</li>
+        <li class="aqua">목록2< - indax 1/li>
         <li>목록3</li>
     </ul>
+
+    <p class="aqua">나는 유엘밖의 아쿠아 - index 2</p>
 
     <script>
         // 변수1 = 값;
@@ -50,8 +53,10 @@
         
         // 단일 요소 선택
         document.querySelector("ul").style.borderLeft = "5px solid";
+        document.querySelector("#green").style.width = "400px";
+        document.querySelector(".aqua").style.borderTop = "solid";
         // 같은 요소가 한 개 이상
-        document.querySelectorAll("li")[7].style.borderTop = "1px solid";
+        document.querySelectorAll(".aqua")[2].style.color = "aqua";
         // document.querySelectorAll("ul")[0].style.borderTop = "1px solid";
         
         // 객체: document
