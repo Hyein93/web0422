@@ -22,15 +22,11 @@
     margin-top: 112px;
 }
 
-:root {
-    --w: 900px;
-    --h: 156px;
-}
 
 .slide {
     position: relative;
-    width: var(--w);
-    height: var(--h);
+    width: 900px;
+    height: 156px;
     overflow: hidden;
 }
 
