@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: 50% 43%;
     box-sizing: border-box;
-    background-image: url(/70_pf/team/asset/section_1_banner.jpg)
+    background-image: url(/70_pf/team/03.asset/indax/section_1_banner.jpg)
 }
 
 .container_1 {
@@ -22,15 +22,11 @@
     margin-top: 112px;
 }
 
-:root {
-    --w: 900px;
-    --h: 156px;
-}
 
 .slide {
     position: relative;
-    width: var(--w);
-    height: var(--h);
+    width: 900px;
+    height: 156px;
     overflow: hidden;
 }
 

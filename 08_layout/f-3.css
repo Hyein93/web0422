@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* @import는 상단에 기록한다*/
-@import url(reset.css);
-@import url(typo.css);
-@import url(header.css);
-@import url(footer.css);
+@import url(common/reset.css);
+@import url(common/typo.css);
+@import url(common/header.css);
+@import url(common/footer.css);
 
 /* 슬라이드 */
 #slide {
@@ -68,6 +68,7 @@
 #banner>div h2 {
     margin-bottom: 16px;
 }
+
 /* 공지사항 및 갤러리 */
 #tab_wrap {
     height: 280px;

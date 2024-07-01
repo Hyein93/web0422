@@ -7,8 +7,8 @@
     <title>-</title>
     <style>
         /* reset(초기화)는 상위에 있어야 한다. */
-        @import url(style/reset.css);
-        @import url(style/typo.css);
+        @import url(/70_pf/team/02.css/reset.css);
+        @import url(/70_pf/team/02.css/typo.css);
 
         footer {
             border: 1px solid red;
@@ -37,6 +37,10 @@
 
         .list {
             margin-bottom: 8px;
+        }
+
+        .list img {
+            width: 45px;
         }
 
         .shortcut_fnb {
@@ -151,6 +155,12 @@
             margin: 0px;
             margin-top: 6px;
         }
+        .contacts {
+            margin: 0 auto;
+            height: 126px;
+            padding: 30px 360px;
+            border: 1px solid red;
+        }
     </style>
 </head>
 
@@ -205,9 +215,9 @@
                     <li class="list">
                         <h6>SNS</h6>
                     </li>
-                    <li class="list"><a href="#"><img src="./asset/insta.png" alt="인스타그램"></a></li>
-                    <li class="list"><a href="#"><img src="./asset/facebook.png" alt="페이스북"></a></li>
-                    <li class="list"><a href="#"><img src="./asset/youtube.png" alt="유튜브"></a></li>
+                    <li class="list"><a href="#"><img src="../03.asset/indax/icon_instagram.svg" alt="인스타그램"></a></li>
+                    <li class="list"><a href="#"><img src="../03.asset/indax/icon_facebook.svg" alt="페이스북"></a></li>
+                    <li class="list"><a href="#"><img src="../03.asset/indax/icon_youTube.svg" alt="유튜브"></a></li>
                 </ul>
             </div>
         </div>
@@ -217,12 +227,10 @@
         <div class="line"></div>
         <div class="shortcut_fnb_2">
             <h6>뉴스레터 신청</h6>
-            <div class="letter_box">
-                <p>메일 주소 입력</p>
-            </div>
-            <div class="btn">
-                <p>신청</p>
-            </div>
+            <form action="custom.jsp"> 
+                <input type="email" name="uemail" placeholder="이메일을 입력하세요.">
+                <button type="submit">신청</button>
+            </form>
             <div class="Service_info">
                 <ul>
                     <li class="list">
@@ -240,9 +248,15 @@
         </div>
     </div>
     <!-- 컨택트 -->
-    <div class="contacts"></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab accusantium itaque reiciendis fugit autem quod
-        tempora doloremque quasi! Quam reiciendis commodi nobis aperiam optio itaque?</p>
+    <div class="contacts">
+        <ul class="contacts_list">
+            <li class="contacts_item">대표이사: 박병률</li>
+            <li class="contacts_item">사업자등록번호: 121-21-89086</li>
+            <li class="contacts_item">통신판매업신고: 제2008-서울 강서-0408</li>
+            <li class="contacts_item">개인정보보호책임자: 유준욱</li>
+        </ul>
+    </div>
+    </div>
 </footer>
 
 </html>

@@ -9,15 +9,60 @@
         /* reset(초기화)는 상위에 있어야 한다. */
         @import url(style/reset.css);
         @import url(style/typo.css);
-        /* 섹션3 */
+
+        /* 섹션4 */
+        section {
+            width: 1480px;
+            margin: 0 auto;
+            padding: 96px 0;
+        }
+
+        h2 {
+            border-bottom: 1px solid #111;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+        input {
+            /* 세로정렬 */
+            display: block;
+            width: 100%;
+            height: 40px;
+            margin: 16px 0;
+            padding-left: 8px;
+            border:1px solid #ccc;
+        }
+        button {
+            margin: 16px 0 48px;
+            padding: 12px 24px;
+            background: #000;
+        }
+        .map{
+            /* width: 1480px; */
+            height: 845px;
+            background: #333;
+        }
     </style>
 </head>
 
 <body>
-    <!-- 섹션3 영역 -->
+    <!-- 섹션4 영역 -->
     <section>
-        <h2>이벤트</h2>
-        
+        <h2>고객센터</h2>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="custom.jsp">
+            <input type="text" name="uname" placeholder="이름을 입력하세요.">
+            <input type="email" name="uemail" placeholder="이메일을 입력하세요.">
+            <input type="text" name="subject" placeholder="제목을 입력하세요.">
+            <input type="text" name="comment" placeholder="내용을 입력하세요.">
+            <button type="submit">메세지 전송하기</button>
+        </form>
+        <div class="map">
+            <!-- 지도 -->
+        </div>
     </section>
 </body>
 
