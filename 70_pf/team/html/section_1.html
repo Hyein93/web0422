@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(./style/reset.css);
+        @import url(./style/typo.css);
+
+<<<<<<< Updated upstream:70_pf/team/section_1.html
+        .main_visual {
+=======
+        .container_main {
+>>>>>>> Stashed changes:70_pf/team/html/section_1.html
+            display: flex;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 615px;
+<<<<<<< Updated upstream:70_pf/team/section_1.html
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            box-sizing: border-box;
+            background-image: url(/70_pf/team/asset/section_1_banner.jpg)
+=======
+            background: url(/70_pf/team/img/section_1_banner.jpg) 0% 60%;
+>>>>>>> Stashed changes:70_pf/team/html/section_1.html
+        }
+
+        .container_1 {
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            margin: 0 auto;
+            height: 156px;
+            margin-top: 32px;
+        }
+
+<<<<<<< Updated upstream:70_pf/team/section_1.html
+        :root {
+            --w: 900px;
+            --h: 156px;
+=======
+        .container_text {
+            margin-top: 50px;
+            margin-bottom: 32px;
+        }
+
+
+        h2 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 4px 2px 8px #192547;
+>>>>>>> Stashed changes:70_pf/team/html/section_1.html
+        }
+
+        .slide {
+            position: relative;
+            width: var(--w);
+            height: var(--h);
+            overflow: hidden;
+        }
+
+        .slide ul {
+            position: absolute;
+            display: flex;
+        }
+
+        .slide li {
+            flex: 0 0 25%;
+        }
+
+        /* animation */
+        .slide ul {
+            animation: slide 12s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                left: 0%;
+            }
+
+            10% {
+                left: -100%;
+            }
+
+            33% {
+                left: -100%;
+            }
+
+            43% {
+                left: -200%;
+            }
+
+            66% {
+                left: -200%;
+            }
+
+            76% {
+                left: -300%;
+            }
+
+            99.99% {
+                left: -300%;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+        .x_box {
+            justify-content: center;
+            align-items: center;
+            width: 68px;
+            margin: auto;
+            height: 28px;
+            background: #192547;
+            border-radius: 12px;
+            opacity: 0.3;
+        }
+
+        .container_booking {
+            position: absolute;
+            width: 1200px;
+            height: 223px;
+            top: 337px;
+        }
+
+        .tabs {
+            position: relative;
+            width: 1200px;
+            height: 223px;
+        }
+
+        .tabs label {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.5);
+            width: 400px;
+            height: 50px;
+            line-height: 50px;
+            color: #192547;
+            cursor: pointer;
+            border-radius: 12px 12px 0 0;
+            margin-left: -4px;
+            font-size: 20px;
+        }
+
+        .tabs label:nth-of-type(1) {
+            margin-left: 0px;
+        }
+
+        .tabs div {
+            display: none;
+            position: absolute;
+            width: 1200px;
+            height: 173px;
+            padding: 30px;
+        }
+
+        .tabs input {
+            display: none;
+        }
+
+        .tabs input:checked+label {
+            background: #192547;
+            color: #fff;
+        }
+
+        .tabs input:checked+label+div {
+            display: block;
+        }
+
+        /* bg-color */
+        .x_tab {
+            background: #F9F9F9;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .booking_widget {
+            width: 234px;
+            height: 35px;
+            border-radius: 30px;
+            border: 1px solid #192547;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+<<<<<<< Updated upstream:70_pf/team/section_1.html
+        <!-- Visual -->
+        <div class="main_visual">
+            <!-- Main Text Slide -->
+            <div class="container_1">
+                <div class="slide">
+                    <ul>
+                        <li><a href="#" target="_blank">
+                                <img src="/70_pf/team/asset/1.png" alt="slide1">
+                            </a></li>
+                        <li><a href="#" target="_blank">
+                                <img src="/70_pf/team/asset/2.png" alt="slide2">
+                            </a></li>
+                        <li><a href="#" target="_blank">
+                                <img src="/70_pf/team/asset/3.png" alt="slide3">
+                            </a></li>
+                        <img src="/70_pf/team/asset/1.png" alt="slide1">
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- Main Text Slide button -->
+=======
+        <div class="container_main">
+            <div class="container_1">
+                <!-- 텍스트 슬라이드 로고 (캐러셀) -->
+                <div class="container_text">
+                    <h2>오키나와 속 진짜 오키나와 @미야코지마</h2>
+                    <span>떠나요! 미야코지마/시모시지마 5월 29일 신규취항</span>
+                </div>
+>>>>>>> Stashed changes:70_pf/team/html/section_1.html
+                <div class="box"></div>
+            </div>
+            <div class="container_booking">
+                <div class="booking_main">
+                    <div class="tabs">
+                        <input type="radio" name="btn" id="btn1" checked>
+                        <label for="btn1">예약</label>
+<<<<<<< Updated upstream:70_pf/team/section_1.html
+                        <div class="tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis
+                            laudantium
+                            quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
+                            molestias
+                            reiciendis
+                            dolorem?
+                        </div>
+=======
+                        <div class="tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus porro fugit
+                            odit,
+                            ipsum in
+                            maxime sint vitae a consectetur. Sequi provident doloribus ex obcaecati animi eos fugiat,
+                            distinctio
+                            pariatur. Maxime.</div>
+>>>>>>> Stashed changes:70_pf/team/html/section_1.html
+                        <input type="radio" name="btn" id="btn2">
+                        <label for="btn2">체크인</label>
+                        <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
+                            nobis
+                            laudantium
+                            quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
+                            molestias
+                            reiciendis
+                            dolorem?</div>
+                        <input type="radio" name="btn" id="btn3">
+                        <label for="btn3">예약조회</label>
+                        <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
+                            nobis
+                            laudantium
+                            quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
+                            molestias
+                            reiciendis
+                            dolorem?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
