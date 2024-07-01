@@ -35,8 +35,8 @@
 }
 
 .main_2>.card>.img_warp .info_desc {
-    position: absolute;
     box-sizing: border-box;
+    position: absolute;
     color: #fff;
     text-align: left;
     height: 115px;
