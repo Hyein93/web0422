@@ -75,6 +75,11 @@
     height: 16px;
 }
 
+#sec1 .slide_box ul li a {
+    display:block;
+    height: 16px;
+}
+
 /* 항공권 검색 */
 
 .tabs {
@@ -102,7 +107,7 @@
 .tabs div {
 display: none;
 position: absolute;
-width: 1200px;
+width: 1198px;
 height: 173px;
 padding: 20px 40px;
 }
@@ -164,7 +169,6 @@ font-size: 14px;
     margin: 0;
     margin-bottom: 8px;
     max-width: 200px;
-    font-family: 'GmarketSansTTFLight';
     color: #fff;
 }
 
@@ -221,52 +225,69 @@ font-size: 14px;
 }
 
 /* 섹션4 */
-/* 공지사항 */
 #sec4 {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 515px;
     margin: auto 0;
     background: #fff;
-    border: 1px solid red;
 }
-
-#sec4 .notice {
+#sec4 .wrap{
     display: flex;
+    justify-content: space-between;
     width: 1200px;
-    margin: 0 auto;
-    border: 1px solid red;
+    margin: auto 0;
+    height: 515px;
 }
-
 #sec4 h2 {
     padding: 48px 0;
 }
 
-#sec4 ul {
-    width: 700px;
-    height: calc(100% - 40px);
+#sec4 img {
+    border-radius: 7px;
 }
 
-#sec4 li {
-    top: 10px;
+/* 공지사항 */
+#sec4 .notice {
+    width: 700px;
+}
+
+#sec4 .notice ul {
+    width: 100%;
+    height: 271px;
+}
+
+#sec4 .notice li {
     justify-content: space-between;
-    line-height: 2.3;
+    line-height: 4.2;
     border-bottom: 1px solid #192547;
     
 }
 
-#sec4 li:nth-of-type(1) {
+#sec4 .notice li:nth-of-type(1) {
     border-top: 1px solid #192547;
 }
 
-#sec4 li a {
+#sec4 .notice li a {
     display: inline-block;
     width: 600px;
-    padding: 15px 0;
 }
 
+/* 티저바로가기 배너 */
 #sec4 .banner {
-    display: flex;
+    padding-top:100px;
     width: 468px;
+}
+
+#sec4 .banner p{
+    text-align: right;
+    margin: 0 0 4px 0;
+    font-size: 14px;
+}
+
+#sec4 .banner ul {
+    display: block;
+    width: 100%;
     height: 271px;
 }

@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/70_pf/team/02.css/reset.css">
-    <link rel="stylesheet" href="/70_pf/team/02.css/typo.css">
-    <link rel="stylesheet" href="/70_pf/team/02.css/header.css">
-    <link rel="stylesheet" href="/70_pf/team/02.css/main_1.css">
-    <link rel="stylesheet" href="/70_pf/team/02.css/main_2.css">
-    <link rel="stylesheet" href="/70_pf/team/02.css/main_3.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url(reset.css);
+        @import url(typo.css);
+        @import url(header.css);
+        @import url(section1.css);
+    </style>
 </head>
 
 <body>
-    <!-- 헤더 시작 -->
     <header>
         <div class="header_inner">
             <!-- Logo -->
@@ -85,52 +85,52 @@
                 </ul>
             </nav>
             <div class="header_box">
-                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_search.svg"
-                        alt="search"></a>
-                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_alarm.svg" alt="alarm"></a>
-                <a href="sub/sign_up.html"><img src="https://images.jinair.com/newHom/images/web/icons/icon_mypage.svg"
-                        alt="login"></a>
+                <a href="#"><img src="/70_pf/team/03.asset/indax/icon_search.svg" alt="search"></a>
+                <a href="#"><img src="/70_pf/team/03.asset/indax/icon_alarm.svg" alt="alarm"></a>
+                <a href="sub/sign_up.html"><img src="/70_pf/team/03.asset/indax/icon_mypage.svg" alt="login"></a>
             </div>
         </div>
     </header>
-    <!-- //헤더 끝 -->
-    <section>
-        <!-- 섹션 1 -->
-        <!-- Visual -->
-        <div class="main_visual">
-            <!-- Main Text Slide -->
-            <div class="container_1">
+    <!-- 섹션1 -->
+    <section id="sec1">
+        <div class="visual">
+            <!-- 슬라이드 배너 -->
+            <div class="banner">
                 <div class="slide">
                     <ul>
-                        <li><a href="#" target="_blank">
-                                <img src="/70_pf/team/03.asset/indax/text_banner_1.png" alt="slide1">
-                            </a></li>
-                        <li><a href="#" target="_blank">
-                                <img src="/70_pf/team/03.asset/indax/text_banner_2.png" alt="slide2">
-                            </a></li>
-                        <li><a href="#" target="_blank">
-                                <img src="/70_pf/team/03.asset/indax/text_banner_3.png" alt="slide3">
-                            </a></li>
-                        <img src="/70_pf/team/03.asset/indax/text_banner_1.png" alt="slide1">
-                        </a></li>
+                        <li><a href="#"><img src="/70_pf/team/03.asset/indax/text_banner_1.png" alt=""></a></li>
+                        <li><a href="#"><img src="/70_pf/team/03.asset/indax/text_banner_2.png" alt=""></a></li>
+                        <li><a href="#"><img src="/70_pf/team/03.asset/indax/text_banner_3.png" alt=""></a></li>
+                        <li><a href="#"><img src="/70_pf/team/03.asset/indax/text_banner_1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <!-- Main Text Slide button -->
-                <div class="x_box"></div>
-            </div>
-            <div class="container_booking">
-                <div class="booking_main">
+                <div class="slide_box">
+                    <ul>
+                        <li><a href="#">
+                                <img src="/70_pf/team/03.asset/indax/icon_before.svg" alt="이전">
+                            </a></li>
+                        <li><a href="#">
+                                <img src="/70_pf/team/03.asset/indax/icon_stop.svg" alt="멈춤">
+                            </a></li>
+                        <li><a href="#">
+                                <img src="/70_pf/team/03.asset/indax/icon_after.svg" alt="다음">
+                            </a></li>
+                    </ul>
+                </div>
+                <!-- 항공권 검색 -->
+                <div class="container_booking">
                     <div class="tabs">
+                        <!-- 탭1 -->
                         <input type="radio" name="btn" id="btn1" checked>
                         <label for="btn1">예약</label>
-                        <div class="tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil nobis
+                        <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
+                            nobis
                             laudantium
                             quaerat, eaque nam officia at unde neque voluptatem quasi, recusandae iste ut soluta
                             molestias
                             reiciendis
-                            dolorem?
-                        </div>
+                            dolorem?</div>
+                        <!-- 탭2 -->
                         <input type="radio" name="btn" id="btn2">
                         <label for="btn2">체크인</label>
                         <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
@@ -140,6 +140,7 @@
                             molestias
                             reiciendis
                             dolorem?</div>
+                        <!-- 탭3 -->
                         <input type="radio" name="btn" id="btn3">
                         <label for="btn3">예약조회</label>
                         <div class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum, nihil
@@ -153,144 +154,216 @@
                 </div>
             </div>
         </div>
-        <!-- //섹션1 끝 -->
-        <!-- 섹션2 -->
-        <div class="main_2">
-            <h2>최저가 여행</h2>
-            <div class="card">
-                <div class="img_warp">
-                    <img src="/70_pf/team/03.asset/indax/price_1.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="place">
-                                <span>부산(PUS)</span>
-                                <img src="/70_pf/team/03.asset/indax/icon_Line.png" alt="에서부터">
-                                <span>오사카</span>
-                            </p>
-                            <p class="trip_date">
-                                <span>
-                                    2024.06.26(수)
-                                </span>
-                            </p>
-                            <p class="price">
-                                <span class="currency">KRW</span>
-                                <span class="num">142,600</span>
-                            </p>
+    </section>
+    <!-- 섹션2 -->
+    <section id="sec2">
+        <h2>최저가 여행</h2>
+        <div class="wrap">
+            <ul class="bxslider">
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_1.png" alt="오사카">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>부산(PUS) ↔ 오사카</p>
+                                <p>2024.06.26(수)</p>
+                                <p>KRW 100,900</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="img_warp">
-                    <img src="/70_pf/team/03.asset/indax/price_2.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="place">
-                                <span>서울/인천(ICN)</span>
-                                <img src="/70_pf/team/03.asset/indax/icon_Line.png" alt="에서부터">
-                                <span>홍콩</span>
-                            </p>
-                            <p class="trip_date">
-                                <span>
-                                    2024.07.18(목)
-                                </span>
-                            </p>
-                            <p class="price">
-                                <span class="currency">KRW</span>
-                                <span class="num">111,600</span>
-                            </p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_2.png" alt="홍콩">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>서울/인천(ICN) ↔ 홍콩</p>
+                                <p>2024.07.18(목)</p>
+                                <p>KRW 111,600</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="img_warp">
-                    <img src="/70_pf/team/03.asset/indax/price_3.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="place">
-                                <span>서울/인천(ICN)</span>
-                                <img src="/70_pf/team/03.asset/indax/icon_Line.png" alt="에서부터">
-                                <span>보홀</span>
-                            </p>
-                            <p class="trip_date">
-                                <span>
-                                    2024.09.02(월)
-                                </span>
-                            </p>
-                            <p class="price">
-                                <span class="currency">KRW</span>
-                                <span class="num">129,300</span>
-                            </p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_3.png" alt="보홀">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>서울/인천(ICN) ↔ 보홀</p>
+                                <p>2024.09.02(월)</p>
+                                <p>KRW 129,300</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="img_warp">
-                    <img src="/70_pf/team/03.asset/indax/price_4.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="place">
-                                <span>부산(PUS)</span>
-                                <img src="/70_pf/team/03.asset/indax/icon_Line.png" alt="에서부터">
-                                <span>도쿄</span>
-                            </p>
-                            <p class="trip_date">
-                                <span>
-                                    2024.09.10(화)
-                                </span>
-                            </p>
-                            <p class="price">
-                                <span class="currency">KRW</span>
-                                <span class="num">137,800</span>
-                            </p>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_4.png" alt="도쿄">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>부산(PUS) ↔ 도쿄</p>
+                                <p>2024.09.10(화)</p>
+                                <p>KRW 137,800</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_1.png" alt="오사카">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>부산(PUS) ↔ 오사카</p>
+                                <p>2024.06.26(수)</p>
+                                <p>KRW 100,900</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_2.png" alt="홍콩">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>서울/인천(ICN) ↔ 홍콩</p>
+                                <p>2024.07.18(목)</p>
+                                <p>KRW 111,600</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_3.png" alt="보홀">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>서울/인천(ICN) ↔ 보홀</p>
+                                <p>2024.09.02(월)</p>
+                                <p>KRW 129,300</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/price_4.png" alt="도쿄">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>부산(PUS) ↔ 도쿄</p>
+                                <p>2024.09.10(화)</p>
+                                <p>KRW 137,800</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 제이쿼리 라이브러리 파일 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        $('.bxslider').bxSlider({
+            minSlides: 3,
+            maxSlides: 4,
+            slideWidth: 282,
+            slideMargin: 24
+        });
+    </script>
+    <section id="sec3">
+        <h2>이벤트</h2>
+        <div class="wrap">
+            <ul class="bxslider2">
+                <li>
+                        <a href="#">
+                            <img src="/70_pf/team/03.asset/indax/event_1.png" alt="event_1">
+                            <div class="info_desc">
+                                <div class="info_text">
+                                    <p>진에어페이 x 비씨카드</p>
+                                    <p>1만원 추가 할인 받아요!</p>
+                                </div>
+                            </div>
+                        </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/70_pf/team/03.asset/indax/event_2.png" alt="event_2">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>진에어 추천 여행지 & 여행룩!</p>
+                                <p>최대 15% 할인을 만나보세요!</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/event_3.png" alt="event_3">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>다카마쓰 신규취항 기념!</p>
+                                <p>프로모션 코드 10% 추가 할인 받아요.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                        <a href="#">
+                            <img src="/70_pf/team/03.asset/indax/event_1.png" alt="event_1">
+                            <div class="info_desc">
+                                <div class="info_text">
+                                    <p>진에어페이 x 비씨카드</p>
+                                    <p>1만원 추가 할인 받아요!</p>
+                                </div>
+                            </div>
+                        </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/70_pf/team/03.asset/indax/event_2.png" alt="event_2">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>진에어 추천 여행지 & 여행룩!</p>
+                                <p>최대 15% 할인을 만나보세요!</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="/70_pf/team/03.asset/indax/event_3.png" alt="event_3">
+                        <div class="info_desc">
+                            <div class="info_text">
+                                <p>다카마쓰 신규취항 기념!</p>
+                                <p>프로모션 코드 10% 추가 할인 받아요.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 제이쿼리 라이브러리 파일 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        $('.bxslider2').bxSlider({
+            minSlides: 3,
+            maxSlides: 4,
+            slideWidth: 384,
+            slideMargin: 24
+        });
+    </script>
+    <section id="sec4">
+        <!-- 공지사항 -->
+        <div class="wrap">
+            <div class="notice">
+                <h2>공지사항</h2>
+                <ul>
+                    <li><a href="#">국내선 유류할증료 안내 (2024년 7월)</a>2024.06.03</li>
+                    <li><a href="#">[한국발 외] 국제선 유류할증료 (2024년 6월)</a>2024.05.31</li>
+                    <li><a href="#">[한국 출발] 국제선 유류할증료 (2024년 6월)</a>2024.05.16</li>
+                    <li><a href="#">6월 호국보훈의 달 국가유공자 국내선 특별할인</a>2024.05.13</li>
+                </ul>
+            </div>
+            <!-- 바로가기 배너 -->
+            <div class="banner">
+                <a href="#"><p>더 보기</p></a>
+                <ul>
+                    <li><a href="#"><img src="/70_pf/team/03.asset/indax/banner.svg" " alt="teaser"></a></li>
+                </ul>
             </div>
         </div>
-        <!-- //섹션2 끝 -->
-        <!-- 섹션3 -->
-        <div class="main_3">
-            <h2>이벤트</h2>
-            <div class="event_card">
-                <div class="event_img_warp">
-                    <img src="/70_pf/team/03.asset/indax/event_1.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="title_text">
-                                <span>진에어페이 x 비씨카드</span>
-                            </p>
-                            <p class="sub_text">
-                                <span>1만원 추가 할인 받아요!</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="event_img_warp">
-                    <img src="/70_pf/team/03.asset/indax/event_2.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="title_text">
-                                <span>진에어 추천 여행지 & 여행룩!</span>
-                            </p>
-                            <p class="sub_text">
-                                <span>최대 15% 할인을 만나보세요!</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="event_img_warp">
-                    <img src="/70_pf/team/03.asset/indax/event_3.png" alt="line">
-                    <div class="info_desc">
-                        <div>
-                            <p class="title_text">
-                                <span>다카마쓰 신규취항 기념!</span>
-                            </p>
-                            <p class="sub_text">
-                                <span>프로모션 코드 10% 추가 할인 받아요.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //섹션3 끝 -->
     </section>
 </body>
 

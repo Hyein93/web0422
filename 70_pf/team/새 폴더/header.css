@@ -3,8 +3,8 @@
 @import url(typo.css);
 
 header {
-    position: fixed;
-    z-index: 9999;
+    z-index: 100;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ header {
     width: 100%;
     margin: 0 auto;
     height: 80px;
-    background: #fff;
+    background: rgba(0, 0, 0, 0);
 }
 
 .header_inner {
@@ -28,10 +28,6 @@ header {
     width: 137px;
 }
 
-.header_inner.main a {
-    font-size: 20px;
-}
-
 .header_box {
     width: 137px;
     margin-left: 88px;
@@ -39,8 +35,7 @@ header {
 
 .header_box>a>img {
     height: 22px;
-    margin-left: 19px;
-
+    margin-left: 20px;
 }
 
 .gnb {
