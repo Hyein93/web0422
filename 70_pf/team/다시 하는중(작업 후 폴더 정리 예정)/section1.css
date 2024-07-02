@@ -220,5 +220,53 @@ font-size: 14px;
     margin-bottom: 5px;
 }
 
-/
-/
+/* 섹션4 */
+/* 공지사항 */
+#sec4 {
+    display: flex;
+    width: 100%;
+    height: 515px;
+    margin: auto 0;
+    background: #fff;
+    border: 1px solid red;
+}
+
+#sec4 .notice {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+#sec4 h2 {
+    padding: 48px 0;
+}
+
+#sec4 ul {
+    width: 700px;
+    height: calc(100% - 40px);
+}
+
+#sec4 li {
+    top: 10px;
+    justify-content: space-between;
+    line-height: 2.3;
+    border-bottom: 1px solid #192547;
+    
+}
+
+#sec4 li:nth-of-type(1) {
+    border-top: 1px solid #192547;
+}
+
+#sec4 li a {
+    display: inline-block;
+    width: 600px;
+    padding: 15px 0;
+}
+
+#sec4 .banner {
+    display: flex;
+    width: 468px;
+    height: 271px;
+}

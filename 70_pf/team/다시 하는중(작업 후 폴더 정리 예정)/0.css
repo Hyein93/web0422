@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+
+#sec4 {
+    display: flex;
+    width: 100%;
+    height: 515px;
+    margin: auto 0;
+    background: #fff;
+    border: 1px solid red;
+}
+#sec4 .wrap{
+    display: flex;
+    width: 1200px;
+    margin: auto 0;
+    height: 515px;
+    background: #dafffd;
+    border: 1px solid red;
+}
+#sec4 h2 {
+    padding: 48px 0;
+}
+
+#sec4 img {
+    border-radius: 7px;
+    border: 1px solid red;
+}
+
+/* 공지사항 */
+.notice {
+    width: 380px;
+}
+
+#notice ul {
+    width: 100%;
+    height: calc(100% - 40px);
+    border: 1px solid #f3f3f3;
+    border-radius: 0 13px 13px 13px;
+    padding: 15px;
+}
+
+#notice li {
+    top: 10px;
+    justify-content: space-between;
+    line-height: 2.3;
+    border-bottom: 1px dotted #ccc;
+}
+
+#notice li a {
+    display: inline-block;
+    width: 270px;
+}
+
+/* 티저바로가기 배너 */
+#banner {
+    margin-left: 10px;
+    width: 380px;
+}
+
+#banner ul {
+    width: 100%;
+    height: calc(100% - 40px);
+    border: 1px solid #f3f3f3;
+    border-radius: 0 13px 13px 13px;
+    padding: 15px;
+}
+
+#banner span {
+    display: flex;
+    height: 146px;
+}
