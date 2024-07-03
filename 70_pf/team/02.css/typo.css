@@ -35,3 +35,8 @@ button {color:#BED600; }
 
 header .main li {font-size: 20px;}
 header .sub li {font-size: 14px;}
+
+#footer1 a{
+    font-size: 14px;
+    line-height: 1.6rem;
+}
