@@ -10,42 +10,26 @@
     <div>박스1</div>
     <div>박스2</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        /*  
-            객체
-                {속성:값, 속성:값, ...}
+        /* 
+            element.style.CSS속성명 = "속성값";
+            단, CSS속성명은 카멜표기법으로 한다.
 
-            객체.메서드(인수, 인수, ...)
-            인수는 메서드마다 정해져있다.
-
-            방법1: element.css("속성", 값);
-                객체 형식으로 작성할 경우 CSS 속성명으로 기록하면 ""를 사용하고,
-            방법2: element.css({속성:값, 속성:값, ...});
-                카멜표기법으로 표기하면 ""를 생략할 수 있다.
-            element.eq(숫자)
-
+            낙타 표기법(Camel Case)?
+                여러 단어를 연달아 사용할 때 각 단어의 첫 글자를 대문자로 적되, 맨 앞에 오는 단어는 소문자로 표기하는 것이다.
         */
-        
+
         /* 
             요소(element) 찾기
-            $("선택자")
+            document.querySelectorAll("선택자")
         */
 
-        // 변수 선언
-        const eleDiv = $('div').eq(0);
+        const eleDiv = document.querySelectorAll('div')[0];
+        eleDiv.style.width = "100px";
+        eleDiv.style.height = "100px";
+        eleDiv.style.backgroundColor = "red";
         
-        // 실행코드 속성명에 "" 생략 가능
-        eleDiv.css ({
-            width:"100px",
-            height:100,
-            backgroundColor:"red",
-            borderRadius: 50
-        });
-
-        // eleDiv.css("width", "100px");
-        // eleDiv.css("height", "100px");
-        // eleDiv.css("backgroundColor", "red");
-
+        document.querySelectorAll('div')[1].style.background = "blue";
     </script>
+</body>
 </html>
