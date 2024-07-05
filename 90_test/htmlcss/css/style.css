@@ -181,19 +181,19 @@ header .container {
 }
 
 .slide li:nth-child(1) {
-    background: url(/90_test/htmlcss/images/visual_img_1.jpg);
+    background: url(../images/visual_img_1.jpg);
 }
 
 .slide li:nth-child(2) {
-    background: url(/90_test/htmlcss/images/visual_img_2.jpg) 60% 50%/cover;
+    background: url(../images/visual_img_2.jpg) 60% 50%/cover;
 }
 
 .slide li:nth-child(3) {
-    background: url(/90_test/htmlcss/images/visual_img_3.jpg) 50% 50%/cover;
+    background: url(../images/visual_img_3.jpg) 50% 50%/cover;
 }
 
 .slide li:nth-child(4) {
-    background: url(/90_test/htmlcss/images/visual_img_1.jpg);
+    background: url(../images/visual_img_1.jpg);
 }
 
 
