@@ -4,59 +4,67 @@
 
 @font-face {
     font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff');
 }
 
 @font-face {
     font-family: 'GmarketSansTTFBold';
-    src: url('./GmarketSansTTFBold.ttf');
+    src: url('../02.css/GmarketSansTTFBold.ttf');
 }
 
 @font-face {
     font-family: 'GmarketSansTTFLight';
-    src: url('./GmarketSansTTFLight.ttf');
+    src: url('../02.css/GmarketSansTTFLight.ttf');
 }
 
-:root {
-    font-size: 10px;
+html {
+    font-size: 16px;
 }
 
 body {
     font-family: "GmarketSansMedium", sans-serif;
-    line-height: 1;
-}
-
-/* font의 위계 */
-/* 1depth, mainmenu */
-.main>li>a {
-    font-size: 2.0rem;
+    font-size: 1rem;
     color: #192547;
 }
 
-.main li:hover a {
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "GmarketSansTTFBold", sans-serif;
+    font-size: 1.5rem;
     color: #192547;
 }
 
-/* 2depth, submenu */
-.sub li a {
-    font-size: 1.4rem;
-    color: #ccc;
+p {
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 1rem;
 }
 
 a {
     color: #192547;
 }
 
-a:visited {
-    color: #192547;
+input,
+button {
+    font-size: 14px;
+    font-family: "GmarketSansMedium", sans-serif;
 }
 
-a:hover {
-    color: #192547;
+button {
+    color: #BED600;
 }
 
-a:active {
-    color: #192547;
+header .main li {
+    font-size: 20px;
+}
+
+header .sub li {
+    font-size: 14px;
+}
+
+#footer1 a {
+    font-size: 14px;
+    line-height: 1.6rem;
 }
