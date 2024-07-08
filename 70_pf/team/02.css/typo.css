@@ -9,34 +9,62 @@
 
 @font-face {
     font-family: 'GmarketSansTTFBold';
-    src: url('/70_pf/team/02.css/GmarketSansTTFBold.ttf');
+    src: url('../02.css/GmarketSansTTFBold.ttf');
 }
 
 @font-face {
     font-family: 'GmarketSansTTFLight';
-    src: url('/70_pf/team/02.css/GmarketSansTTFLight.ttf');
+    src: url('../02.css/GmarketSansTTFLight.ttf');
 }
 
-html {font-size: 16px;}
+html {
+    font-size: 16px;
+}
 
-body {font-family: "GmarketSansMedium", sans-serif; font-size: 1rem; color: #192547;}
+body {
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 1rem;
+    color: #192547;
+}
 
-h1 {font-weight: normal;}
+h1 {
+    font-weight: normal;
+}
 
-h2 {font-family: "GmarketSansTTFBold", sans-serif; font-size: 1.5rem; color: #192547;}
+h2 {
+    font-family: "GmarketSansTTFBold", sans-serif;
+    font-size: 1.5rem;
+    color: #192547;
+}
 
-p {font-family: "GmarketSansMedium", sans-serif; font-size: 1rem;}
+p {
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 1rem;
+}
 
-a {color: #192547;}
+a {
+    color: #192547;
+}
 
-input, button {font-size: 14px; font-family: "GmarketSansMedium", sans-serif;}
+input,
+button {
+    font-size: 14px;
+    font-family: "GmarketSansMedium", sans-serif;
+}
 
-button {color:#BED600; }
+button {
+    color: #BED600;
+}
 
-header .main li {font-size: 20px;}
-header .sub li {font-size: 14px;}
+header .main li {
+    font-size: 20px;
+}
 
-#footer1 a{
+header .sub li {
+    font-size: 14px;
+}
+
+#footer1 a {
     font-size: 14px;
     line-height: 1.6rem;
 }
