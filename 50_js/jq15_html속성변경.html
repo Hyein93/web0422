@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        a:hover {
+            background: #000;
+            color: #fff;
+            box-shadow: 0 0 5px 2px greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML 속성 변경하기/가져오기</h1>
+    <div>
+        <a href="#" id="prev">이전(prev)버튼</a>
+        <a href="#" id="next">다음(next)버튼</a>
+    </div>
+    <img src="1.jpg" alt="자연1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        //요소 찾기
+        const prev = $("#prev");
+        const next = $("#next");
+        const img = $("img");
+
+        //이벤트 처리
+        prev.click(function () {
+            // HTML속성 변경 하기
+            img.attr("src", "2.jpg");
+            img.attr("alt", "자연2");
+        });
+
+        next.click(function () {
+            // HTML속성 변경 하기
+            img.attr({ src: "3.jpg", alt: "자연3" })
+        });
+
+    </script>
+</body>
+
+</html>

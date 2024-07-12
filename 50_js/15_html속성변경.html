@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        a:hover {
+            background: #000;
+            color: #fff;
+            box-shadow: 0 0 5px 2px greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML 속성 변경하기/가져오기</h1>
+    <div>
+        <a href="#" id="prev">이전(prev)버튼</a>
+        <a href="#" id="next">다음(next)버튼</a>
+    </div>
+    <img src="1.jpg" alt="선셋이 멋진 장소" title="사진1">
+
+    <script>
+        //요소 찾기
+        const prev = document.querySelector("#prev");
+        const next = document.querySelector("#next");
+        const img = document.querySelector("img");
+
+        //HTML속성 가져오기
+        const tit = img.alt;
+        //console.log(tit);
+        img.title = tit;
+
+
+        //이벤트 처리
+        prev.onclick = function () {
+            // HTML속성 변경 하기
+            img.src = "2.jpg";
+            img.alt = "사진2";
+            //img.setAttribute("src", "2.jpg");
+            //img.setAttribute("alt", "선셋");
+        }
+        next.onclick = function () {
+            // HTML속성 변경 하기
+            img.src = "3.jpg";
+            img.alt = "사진3";
+            //img.setAttribute("src", "2.jpg");
+            //img.setAttribute("alt", "선셋");
+        }
+
+
+    </script>
+</body>
+
+</html>
