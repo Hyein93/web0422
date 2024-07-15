@@ -46,9 +46,20 @@ header {
 main {
     padding-bottom: 200px;
 }
+
 section {
     width: 940px;
     margin: auto;
+}
+
+img {
+    border-radius: 15px;
+}
+
+img:hover {
+    box-shadow: 1px 1px 5px #999;
+    transform: scale(1.1);
+    transition: .3s;
 }
 
 h2 {
