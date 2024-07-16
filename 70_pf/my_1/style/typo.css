@@ -38,7 +38,6 @@ body {
     font: 1.5rem/1.5 Helvetica, Arial, sans-serif;
 }
 
-h3,
 nav a {
     font-family: 'Dosuguan';
 }
@@ -55,6 +54,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'Cafe24SsurroundAir';
     font-size: 2.25rem;
     margin: 0px;
 }
