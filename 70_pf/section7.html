@@ -69,25 +69,26 @@
             text-align: center;
         }
 
-        #s6 {
+        #s7 {
             height: 756px;
         }
 
-        #s6 h2 {
+        #s7 h2 {
             padding-top: 80px;
         }
 
-        #s6 .wrap {
+        #s7 .wrap {
             margin-top: 40px;
         }
 
-        #s6 .bxslider {
+        #s7 .bxslider {
             text-align: left;
         }
 
-        #s6 li p {
+        #s7 li p {
             font-size: 18px;
             margin-top: 13px;
+            height: 180px;
         }
 
         .bx-wrapper {
@@ -121,88 +122,30 @@
 
         /* DIRECTION CONTROLS (NEXT / PREV) */
         .bx-wrapper .bx-prev {
-            left: 370px;
+            left: 365px;
             width: 100px;
-            background: url('./team_2/s7_next.png') no-repeat;
+            background: url('./team_2/prev.svg') no-repeat;
         }
 
         .bx-wrapper .bx-next {
-            right: 370px;
+            right: 365px;
             width: 100px;
-            background: url('./team_2/s7_next.png') no-repeat;
+            background: url('./team_2/next.svg') no-repeat;
         }
 
         .bx-wrapper .bx-controls-direction a {
             position: absolute;
-            top: 34%;
-            margin-top: -16px;
-            outline: 0;
+            top: 32%;
             width: 50px;
             height: 50px;
             text-indent: -9999px;
             z-index: 9999;
-            border: 1px solid red;
-
-        }
-
-        .bx-wrapper .bx-controls-direction a.disabled {
-            display: none;
-        }
-
-        /* AUTO CONTROLS (START / STOP) */
-        .bx-wrapper .bx-controls-auto {
-            text-align: center;
-        }
-
-        .bx-wrapper .bx-controls-auto .bx-start {
-            display: block;
-            text-indent: -9999px;
-            width: 10px;
-            height: 11px;
-            outline: 0;
-            background: url('../70_pf/team/03.asset/indax/icon_before2.SVG') -86px -44px no-repeat;
-            margin: 0 3px;
-        }
-
-        .bx-wrapper .bx-controls-auto .bx-start:hover,
-        .bx-wrapper .bx-controls-auto .bx-start.active,
-        .bx-wrapper .bx-controls-auto .bx-start:focus {
-            background-position: -86px 0;
-        }
-
-        /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-            text-align: left;
-            width: 80%;
-        }
-
-        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-            right: 0;
-            width: 35px;
-        }
-
-        /* IMAGE CAPTIONS */
-        .bx-wrapper .bx-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: #666;
-            background: rgba(80, 80, 80, 0.75);
-            width: 100%;
-        }
-
-        .bx-wrapper .bx-caption span {
-            color: #fff;
-            font-family: Arial;
-            display: block;
-            font-size: .85em;
-            padding: 10px;
         }
     </style>
 </head>
 
 <body>
-    <section id="s6">
+    <section id="s7">
         <div class="inner">
             <h2>1911년부터 케어하는</h2>
             <p>니베아의 제품은 우리에게 깊은 신뢰를 보여주는 소비자의 요구를 항상 만족시킵니다.</p>
@@ -235,22 +178,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
     <script>
         $('.bxslider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
             minSlides: 3,
             maxSlides: 3,
             slideWidth: 360,
             slideMargin: 30
         });
-
-
-        $(function () {
-
-            $('.slider').bxSlider({
-                autoControls: false,
-                auto: true,
-            });
-
-        })
-
     </script>
     </div>
     </section>
