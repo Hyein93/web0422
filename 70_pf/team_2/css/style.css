@@ -131,6 +131,10 @@ input {
     margin-right: 0;
 }
 
+#s3 .s3img {
+    position: relative;
+}
+
 #s3 h3 {
     position: absolute;
     text-align: left;
@@ -138,9 +142,9 @@ input {
     width: 285px;
     margin-left: 38px;
     padding: 7px;
-    top: 232%;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+    top: 73%;
 }
 
 /* 섹션 4 */
@@ -199,11 +203,15 @@ input {
     height: 495px;
 }
 
+#s5 .s5img {
+    position: relative;
+}
+
 #s5 .banner_text {
     position: absolute;
     text-align: center;
     width: 560px;
-    top: 396%;
+    top: 25%;
     color: #ffffff;
     font-weight: 500;
 }
@@ -255,6 +263,7 @@ input {
 
 #s7 .wrap {
     margin-top: 40px;
+    position: relative;
 }
 
 #s7 .bxslider {
@@ -292,20 +301,20 @@ input {
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-    left: 365px;
+    left: -25px;
     width: 100px;
     background: url('../assets/prev.svg') no-repeat;
 }
 
 .bx-wrapper .bx-next {
-    right: 365px;
+    right: -25px;
     width: 100px;
     background: url('../assets/next.svg') no-repeat;
 }
 
 .bx-wrapper .bx-controls-direction a {
     position: absolute;
-    bottom: -454%;
+    top: 22%;
     width: 50px;
     height: 50px;
     text-indent: -9999px;
