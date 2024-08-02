@@ -11,18 +11,20 @@ header {
     /* position이 fixed나 absolute이면 width가 콘텐츠 크기 */
     position: fixed;
     z-index: 9999;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:54px;
+    height: 54px;
     padding: 0 30px;
     background: #fff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
 nav ul {
     display: flex;
 }
+
 nav ul li {
     margin-left: 40px;
 }
@@ -32,11 +34,12 @@ nav ul li {
     position: relative;
     padding-top: 54px;
 }
+
 #sec1 h2 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     letter-spacing: 4px;
     font-weight: 400;
 }
@@ -68,6 +71,7 @@ section li {
     width: 355px;
 }
 
+/* li요소 중에서 4의 배수(4번째, 8번째) 요소를 제외한 li요소에 오른쪽 여백을 20px 지정 */
 section li:not(:nth-of-type(4n)) {
     margin-right: 20px;
 }
@@ -75,7 +79,7 @@ section li:not(:nth-of-type(4n)) {
 
 /* 섹션2 */
 #sec2 h2 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f3f3f3;
     padding-bottom: 24px;
     /* margin-top: 72px; */
     margin-bottom: 48px;
@@ -83,6 +87,9 @@ section li:not(:nth-of-type(4n)) {
 
 #sec2 ul {
     display: flex;
+    /* flex-wrap: wrap은 줄바꿈 속성으로 기본은 nowrap(줄바꿈 안함) */
+    /* 줄바꿈 하기 위해서 wrap으로 설정 */
+    /* 줄바꿈은 부모크기를 벗어나기 시작하면 진행된다 */
     flex-wrap: wrap;
 }
 
@@ -143,14 +150,17 @@ section li:not(:nth-of-type(4n)) {
 #sec4 {
     padding-bottom: 8px;
 }
+
 #sec4 h2 {
     border-bottom: 1px solid #111;
     padding-bottom: 24px;
     margin-bottom: 24px;
 }
+
 #sec4 p {
     margin-bottom: 24px;
 }
+
 #sec4 input {
     display: block;
     width: 100%;
@@ -159,6 +169,7 @@ section li:not(:nth-of-type(4n)) {
     padding-left: 8px;
     border: 1px solid #ccc;
 }
+
 #sec4 button {
     margin: 16px 0 48px;
     padding: 12px 20px;
