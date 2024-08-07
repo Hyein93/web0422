@@ -8,8 +8,13 @@
     <!-- bx슬라이더 라이브러리 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        html {
+            font-size: 10px;
+        }
         body {
             margin: 0;
+            font:1.5rem/1.5 "Noto Sans KR", sans-serif;
         }
 
         img {
@@ -24,12 +29,13 @@
                 vh, vmin, vmax - viewport(뷰포트) 기준
             */
             height: 100vh;
+            min-height: auto;
             object-fit: cover;
         }
 
         #slideWrap {
             position: relative;
-            /* height: 450px; */
+            /* height: 700px; */
             margin: 0 auto;
         }
 
@@ -48,9 +54,9 @@
         .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
             /* 위치 */
             width: auto;
-            left: calc(50% -);
+            left: calc(50% - 30px);
             transform: translateX(-50%);
-            bottom: 35%;
+            bottom: 38%;
         }
 
         .bx-wrapper .bx-pager.bx-default-pager a:focus,
@@ -71,26 +77,43 @@
         /* 실행/일시정지 버튼 */
         .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
             height: 30px;
-            bottom: 35%;
-            right: 50%;
-            width: 35px;
+            bottom: 38.2%;
+            right: calc(50% - 90px);
+            width: auto;
         }
 
-        /* 실행버튼 */
+        /* 실행 버튼 */
         .bx-wrapper .bx-controls-auto .bx-start {
-            display: block;
-            text-indent: -9999px;
-            width: 10px;
+            width: 9px;
             height: 11px;
-            outline: 0;
-            background: url(images/controls.png) -86px -11px no-repeat;
+            background: url(../assets/lottechilsung/btn_play.png) 0px 0px no-repeat;
             margin: 0 3px;
+        }
+
+        .bx-wrapper .bx-controls-auto .bx-start:focus,
+        .bx-wrapper .bx-controls-auto .bx-start:hover,
+        .bx-wrapper .bx-controls-auto .bx-start.active {
+            /* start 버튼 사라지는 현상 제거 */
+            background-position: 0px 0px;
+        }
+
+        /* 일시정지 버튼 */
+        .bx-wrapper .bx-controls-auto .bx-stop {
+            width: 9px;
+            height: 11px;
+            background: url(../assets/lottechilsung/btn_pause.png) 0px 0px no-repeat;
+            margin: 0 3px;
+        }
+        .bx-wrapper .bx-controls-auto .bx-stop:focus,
+        .bx-wrapper .bx-controls-auto .bx-stop:hover,
+        .bx-wrapper .bx-controls-auto .bx-stop.active {
+            background-position: 0px 0px;
         }
 
         /* 이전/다음 버튼 */
         .bx-wrapper .bx-controls-direction a {
             /* 크기 */
-            /* display: block; */
+            display: none;
             width: 40px;
             height: 79px;
             transform: translateY(-50%);
@@ -116,6 +139,50 @@
         .bx-wrapper .bx-next:hover {
             background-position: 0 0;
         }
+
+        /* 텍스트 모션 */
+        #slideWrap p {
+            z-index: 9999;
+            position: absolute;
+            left:50%;
+            top:43%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            /* 
+                url(이미지)
+                calc(숫자 - 숫자)
+                var(--변수명)
+                translate()                
+
+                max(숫자, 숫자) -> 숫자 중에 큰 값으로 지정
+                min(숫자, 숫자) -> 숫자 중에 작은 값으로 지정
+            */
+            /* 
+                1920 * 7 / 100 = 134.4 px
+            */
+            font-size: min(60px, 7vw);
+            font-weight: 700;
+            color: #fff;
+            /* p태그 안에 글자 가로 가운데로 */
+            text-align: center;
+            opacity:0;
+        }
+        
+        #slideWrap p.active {
+            top:38%;
+            opacity: 1;
+            transition: .5s;
+        }
+
+        @media (min-width:992px) {
+            #slideWrap img {
+                min-height: 850px;
+            }
+            .bx-wrapper .bx-controls-direction a {
+                display: block;
+            }
+        }
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
@@ -124,8 +191,32 @@
             $('.slider').bxSlider({
                 auto: true,
                 stopAutoOnClick: true,
-                autoControls: true
+                autoControls: true,
+
+                // 사건(이벤트): 슬라이드 이미지가 바뀌면, 
+                // onSlideBefore: function(){ 코드; } -> 슬라이딩 전
+                // onSlideAfter: function(){ 코드; } -> 슬라이딩 후
+                onSlideBefore: function(){ beforeMotion() },
+                onSlideAfter: function(){ afterMotion() }
             });
+
+            // 슬라이딩 전 메인타이틀이 아래에 있다가
+            /* 
+                document.querySelector("#slideWrap").querySelectorAll("p").classList.add("클래스명") -> 클래스 추가
+                document.querySelector("#slideWrap").querySelectorAll("p").classList.remove("클래스명") -> 클래스 제거
+
+                $("#slideWrap p").addClass() -> 클래스 추가
+                $("#slideWrap p").removeClass() -> 클래스 제거
+            */
+            function beforeMotion(){
+                $("#slideWrap p").removeClass("active");
+            }
+            // 슬라이딩 후 메인타이틀이 위로 나타난다.
+            function afterMotion(){
+                $("#slideWrap p").addClass("active");
+            }
+
+            afterMotion();
         }); // 로드 이벤트
     </script>
 </head>
