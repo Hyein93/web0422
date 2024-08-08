@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>니베아 페이지 시안</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+
+        @media (min-width: 768px) {
+            .phone {
+                display: none;
+            }
+
+            .tablet {
+                display: block;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .tablet {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="phone" src="./assets/index/draft_m.png" alt="phone" usemap="#image-map-phone">
+    <img class="tablet" src="./assets/index/draft_t.png" alt="tablet" usemap="#image-map-tablet">
+    <img class="desktop" src="./assets/index/draft.png" alt="desktop" usemap="#image-map-desktop">
+
+    <map name="image-map-desktop">
+        <area target="" alt="로고" title="로고" href="draft.html" coords="1040,80,881,35" shape="rect">
+        <area target="" alt="로그인" title="로그인" href="draft login.html" coords="123,42,179,71" shape="rect">
+        <area target="" alt="회원가입" title="회원가입" href="#" coords="182,42,244,73" shape="rect">
+        <area target="" alt="조언" title="조언" href="draft advice.html" coords="974,131,915,106" shape="rect">
+        <area target="" alt="니베아월드" title="니베아월드" href="draft nivea world.html" coords="1135,102,1218,132" shape="rect">
+    </map>
+
+    <map name="image-map-tablet">
+        <area target="" alt="로고" title="로고" href="#" coords="324,14,441,46" shape="rect">
+    </map>
+
+    <map name="image-map-phone">
+        <area target="" alt="로고" title="로고" href="#" coords="129,7,232,37" shape="rect">
+    </map>
+</body>
+
+</html>
