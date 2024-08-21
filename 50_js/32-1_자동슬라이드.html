@@ -100,16 +100,21 @@
                         코드; 
                     }
                 */
-               // i = 0 -> 1 -> 2
-            //    for (let i = 0; i< slideListItem.length; i++) {
-            //         slideListItem[i].style.width = 100 + "%";
-            //    }
+                // i = 0 -> 1 -> 2
+                //    for (let i = 0; i< slideListItem.length; i++) {
+                //         slideListItem[i].style.width = 100 + "%";
+                //    }
 
                 // for ~ of 반복문 (ver.ES6)
                 /* 
                     for(const 변수 of HTML컬렉션)
                 */
-               // slideListItem 즉, li 개수 만큼 반복
+                // slideListItem 즉, li 개수 만큼 반복
+
+                /*
+                    제어문 > 반복문 > for, for of(컬렉션, 배열), for in(객체)
+                    메소드: forEach()
+                */
                 for (const x of slideListItem) {
                     x.style.width = 100 + "%";
                 }
@@ -145,7 +150,7 @@
             function autoSlide() {
                 idx++;
                 slideList.style.left = -100 * idx + "%";
-                slideList.style.transition = speed/2000 + "s";
+                slideList.style.transition = speed / 2000 + "s";
 
                 if (idx === slideCount) {
                     idx = 0;
@@ -154,7 +159,7 @@
                     setTimeout(() => {
                         idx = 1;
                         slideList.style.left = -100 * idx + "%";
-                        slideList.style.transition = speed/2000 + "s";
+                        slideList.style.transition = speed / 2000 + "s";
                     }, 0);
                 }
             }
@@ -169,6 +174,8 @@
             <li><img src="../assets/pic_1.jpg" alt="이미지1"></li>
             <li><img src="../assets/pic_2.jpg" alt="이미지2"></li>
             <li><img src="../assets/pic_3.jpg" alt="이미지3"></li>
+            <li><img src="../assets/pic_4.jpg" alt="이미지3"></li>
+            <li><img src="../assets/pic_5.jpg" alt="이미지3"></li>
         </ul>
     </div>
 </body>
