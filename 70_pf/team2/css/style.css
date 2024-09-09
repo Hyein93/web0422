@@ -414,6 +414,10 @@ input {
         padding: 0 50px;
     }
 
+    .logo {
+        margin-top: 28px;
+    }
+
     .search {
         max-width: 300px;
         margin-right: 30px;
