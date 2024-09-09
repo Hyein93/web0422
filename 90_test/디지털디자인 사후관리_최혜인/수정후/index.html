@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bxSlider.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script src="script/slide.js"></script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <!-- 로고 -->
+        <h1 class="logo"><a href="#"><b>HT</b> Hanatour</a></h1>
+        <!-- 내비게이션 -->
+        <nav>
+            <ul>
+                <li><a href="#sec2">여행지</a></li>
+                <li><a href="#sec3">이벤트</a></li>
+                <li><a href="#sec4">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 섹션1-->
+    <section id="sec1">
+        <div class="slideWrap">
+            <ul class="slider">
+                <li>
+                    <img src="images/s1.jpg" alt="슬라이드 이미지1">
+                </li>
+                <li>
+                    <img src="images/s2.jpg" alt="슬라이드 이미지2">
+                </li>
+                <li>
+                    <img src="images/s3.jpg" alt="슬라이드 이미지3">
+                </li>
+                <li>
+                    <img src="images/s4.jpg" alt="슬라이드 이미지3">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 섹션2 -->
+    <section id="sec2">
+        <div class="inner">
+            <h2>여행특가 시그널 추석 황금연휴vs 가을겨울여행</h2>
+            <!-- 탭 -->
+            <div id="tabs">
+                <ul>
+                    <li class="text"><a href="#tab1"><span>추석 황금연휴_장거리🛫</span></a></li>
+                    <li><a href="#tab2"><span>추석 황금연휴_단거리🚀</span></a></li>
+                    <li><a href="#tab3"><span>🍂가을에는 여기가야지</span></a></li>
+                    <li><a href="#tab5"><span>⛄미리보는 겨울여행지</span></a></li>
+                </ul>
+                <div id="tab1" class="on">
+                    <ul>
+                        <li>
+                            <a href="#" class="main_banner"><img src="images/tab1_1.jpg" alt="추석 황금연휴_장거리"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab1_2.jpg" alt="서유럽 3,4국 8~10일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">서유럽 3,4국 8~10일</a>
+                            <h3><a href="#">#베스트셀러 #노쇼핑팁</a></h3>
+                            <a href="#" class="price">2,469,000원~</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab1_3.jpg" alt="스페인 일주 8~9일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">스페인 일주 8~9일</a>
+                            <h3><a href="#">#시내호텔1박 #루프탑레스토랑</a></h3>
+                            <a href="#" class="price">2,999,000원</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab1_4.jpg" alt="그리스 일주 8~10일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">그리스 일주 8~10일</a>
+                            <h3><a href="#">#가성비여행 #산토리니 #메테오라</a></h3>
+                            <a href="#" class="price">3,399,000원</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab2">
+                    <ul>
+                        <li>
+                            <a href="#" class="main_banner"><img src="images/tab2_1.jpg" alt="추석 황금연휴_단거리"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab2_2.jpg" alt="[초특가상품] 오사카 3일,4일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">[초특가상품] 오사카 3일,4일</a>
+                            <h3><a href="#">#핵심여행 #가성비추천</a></h3>
+                            <a href="#" class="price">446,900원</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab2_3.jpg" alt="괌 4~6일 #크라운플라자"></a>
+                            <h3><a href="#">패키지+에어텔</a></h3>
+                            <a href="#" class="price">괌 4~6일 #크라운플라자</a>
+                            <h3><a href="#">#ALLNEW #리뉴얼오픈</a></h3>
+                            <a href="#" class="price">749,900원~</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab2_4.jpg" alt="싱가포르 5일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">싱가포르 5일</a>
+                            <h3><a href="#">#센토사섬 #슈퍼트리쇼</a></h3>
+                            <a href="#" class="price">1,056,000원~</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab3">
+                    <ul>
+                        <li>
+                            <a href="#" class="main_banner"><img src="images/tab3_1.jpg" alt="가을여행"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab3_2.jpg" alt="몽골/테렐지 3~5일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">몽골/테렐지 3~5일</a>
+                            <h3><a href="#">#실속여행 #가성비 #초원</a></h3>
+                            <a href="#" class="price">899,000원~</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab3_3.jpg" alt="알펜루트/나고야 4~5일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">알펜루트/나고야 4~5일</a>
+                            <h3><a href="#">#호쿠리쿠핵심코스</a></h3>
+                            <a href="#" class="price">1,109,900원~</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab3_4.jpg" alt="[세이브] 미동부/캐나다 9~10일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">[세이브] 미동부/캐나다 9~10일</a>
+                            <h3><a href="#">#가성비 #빠짐없는핵심일정</a></h3>
+                            <a href="#" class="price">4,199,000원~</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab4">
+                    <ul>
+                        <li>
+                            <a href="#" class="main_banner"><img src="images/tab4_1.jpg" alt="겨울여행지"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab4_2.jpg" alt="보홀 4~5일 #특급"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">보홀 4~5일 #특급</a>
+                            <h3><a href="#">#비그랜드 #MD추천 #프라이빗비치</a></h3>
+                            <a href="#" class="price">599,000원~</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab4_3.jpg" alt="규슈 4일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">규슈 4일</a>
+                            <h3><a href="#">#MD추천 #베스트상품</a></h3>
+                            <a href="#" class="price">699,900원~</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tab4_4.jpg" alt="시드니 6~7일"></a>
+                            <h3><a href="#">패키지</a></h3>
+                            <a href="#" class="price">시드니 6~7일</a>
+                            <h3><a href="#">#블루마운딘 #포트스티븐스</a></h3>
+                            <a href="#" class="price">1,240,000원~</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- //.inner -->
+        <script src="script/script.js"></script>
+    </section>
+
+    <!-- 섹션3 -->
+    <section id="sec3">
+        <h2>🎵쏠쏠한 혜택은 하나투어가 한번 더 챙겨드려요!</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="images/e_1.jpg" alt="하나투어X삼성카드 결제 혜택"></a>
+                <p>하나투어 x 삼성카드 결제 혜택</p>
+                <h3>최대 7만원 결제일 할인</h3>
+            </li>
+            <li>
+                <a href="#"><img src="images/e_2.jpg" alt="하나투어 x 삼성카드 제휴카드"></a>
+                <p>하나투어 x 삼성카드 제휴카드</p>
+                <h3>최대 336,000원 할인</h3>
+            </li>
+            <li>
+                <a href="#"><img src="images/e_3.jpg" alt="4대 면세 쇼핑 혜택"></a>
+                <p>4대 면세 쇼핑 혜택</p>
+                <h3>롯데/신라/신세계/현대백화점</h3>
+            </li>
+            <li>
+                <a href="#"><img src="images/e_4.jpg" alt="인천 공항철도 할인 혜택"></a>
+                <p>인천 공항철도 할인 혜택</p>
+                <h3>공항가는 길</h3>
+            </li>
+        </ul>
+        <div><a href="#">더 보러가기</a></div>
+    </section>
+
+    <!-- 섹션4 -->
+    <section id="sec4">
+        <h2>고객센터</h2>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="custom.jsp">
+            <input type="text" name="uname" placeholder="이름을 입력하세요.">
+            <input type="email" name="uemail" placeholder="이메일을 입력하세요.">
+            <input type="text" name="subject" placeholder="제목을 입력하세요.">
+            <input type="text" name="comment" placeholder="내용을 입력하세요.">
+            <button type="submit">메세지 전송하기</button>
+        </form>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50594.165863918744!2d126.92673457363117!3d37.57543001750249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca292d9db227d%3A0xc22ffa34a311158!2z7ZWY64KY7Yis7Ja0!5e0!3m2!1sko!2skr!4v1719902733544!5m2!1sko!2skr"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <P>Copyright 2024. Hanatour. All rights reserved.</P>
+    </footer>
+</body>
+
+</html>
