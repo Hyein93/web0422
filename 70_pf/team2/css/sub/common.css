@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+/* 공통 */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+h2 {
+    font-size: 4.0rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.top a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* 서브_니베아월드 */
+#sb_world .s1 h1 {
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+#sb_world .s1 p {
+    font-size: 2rem;
+}
+
+#sb_world .s2 h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #222;
+}
+
+#sb_world .s2 .title p {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #009EE3;
+}
+
+#sb_world .s2 .img_txt h2 {
+    color: #fff;
+}
+
+#sb_world .s2 .history_txt p {
+    font-size: 1.8rem;
+}
+
+#sb_world .s2 .img_txt a {
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+/* 로그인 */
+#login .s1 h1 {
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+#login .s1 p {
+    font-size: 2rem;
+}
+
+/* 768이상: 테블릿 */
+@media (min-width: 768px) {
+    #sb_world .s1 h1 {
+        font-size: 9.6rem;
+    }
+
+    #sb_world .s2 .img_txt h2 {
+        font-size: 8.8rem;
+    }
+
+    #sb_world .s2 .history_txt h3 {
+        font-size: 4.9rem;
+    }
+
+    #sb_world .s2 .history_txt p {
+        font-size: 3.8rem;
+    }
+
+    #login .s1 h1 {
+        font-size: 9.6rem;
+    }
+}
+
+/* 992이상: 데스크탑 */
+@media (min-width: 1500px) {
+    #sb_world .s2 .img_txt h2 {
+        font-size: 7rem;
+    }
+
+    #sb_world .s2 .history_txt h3 {
+        font-size: 2.4rem;
+    }
+
+    #sb_world .s2 .history_txt p {
+        font-size: 1.6rem;
+    }
+}

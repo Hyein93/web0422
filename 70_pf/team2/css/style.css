@@ -47,6 +47,10 @@ header {
     flex: 1;
 }
 
+.top_l a {
+    margin-right: 3px;
+}
+
 .top_r {
     flex: 1;
     justify-content: flex-end;

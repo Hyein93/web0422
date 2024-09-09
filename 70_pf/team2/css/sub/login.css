@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* 섹션1 */
+
+section.s1 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.s1 .text {
+    width: 90vw;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg_circle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    height: 500px;
+    background: #0033a081;
+    border-radius: 50%;
+}
+
+.s1 img {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.s2 {
+    width: 100%;
+    padding: 90px 0 150px;
+
+}
+
+.s2 .login_wrap {
+    width: 100vw;
+    /* height: 340px; */
+    text-align: center;
+    background: #f0eeed;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+.s2 .inner {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.s2 .input_wrap {
+    margin-bottom: 10px;
+}
+
+.s2 .input_wrap input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.s2 .btn_area>a {
+    display: flex;
+    width: 100%;
+    line-height: 50px;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #fff;
+    background: #0032A0;
+    font-size: 18px;
+}
+
+.s2 .btn_area ul {
+    display: flex;
+    justify-content: center;
+}
+
+.s2 .btn_area li {
+    padding: 0 15px;
+    line-height: 1;
+    border-left: 1px solid #ccc;
+}
+
+.s2 .btn_area li:first-child {
+    border-left: none
+}
+
+/* 768이상: 테블릿 */
+@media (min-width: 768px) {}
+
+/* 992이상: 데스크탑 */
+@media (min-width: 992px) {
+    .s2 .login_wrap {
+        width: 58vw;
+    }
+}
