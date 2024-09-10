@@ -35,6 +35,12 @@ nav ul li {
     margin-left: 40px;
 }
 
+#sec2 span {
+    border: none;
+    /* 손 모양 */
+    cursor: pointer;
+}
+
 /* 섹션1 */
 #sec1 {
     position: relative;
