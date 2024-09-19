@@ -16,7 +16,8 @@ body,
 ul,
 h1,
 h2,
-h3 {
+h3,
+span {
     margin: 0;
 }
 
@@ -33,9 +34,7 @@ img {
     width: 100%;
 }
 
-h1,
-h2,
-h3,
+
 nav a {
     font-family: Georgia, "NanumSquareNeo", serif;
     font-style: italic;
@@ -112,9 +111,68 @@ section {
     padding: 0 24px;
 }
 
-.about p {
-    text-indent: 32px;
+/* about me */
+.about .description h3 {
+    position: absolute;
+    font-size: 2.8rem;
+    top: 540px;
 }
+.about .description p {
+    position: absolute;
+    top: 580px;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 0px auto;
+    column-gap: 0px;
+}
+
+.profile-icon {
+    margin-top: 15px;
+    width: 200px;
+}
+
+.myinfo {
+    display: grid;
+    grid-template-columns: 100px auto;
+    column-gap: 70px;
+}
+
+.myinfo ul {
+    width: 160px;
+    margin-top: 34px;
+}
+
+.myinfo ul h2 {
+    font-size: 2.6rem;
+    margin: 0px;
+}
+
+.myinfo ul h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.myinfo ul p {
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.myinfo img {
+    width: 34px;
+}
+
+.skills ul {
+    display: flex;
+    margin: 0px;
+}
+
+.skills ul li:not(:last-child) {
+    margin-right: 12px;
+}
+
+
 
 .home-card {
     display: grid;
@@ -171,5 +229,43 @@ footer p {
         width: 50%;
         margin: auto;
         padding: 0;
+    }
+
+    .profile-icon {
+        margin-top: 15px;
+        width: 286px;
+    }
+
+    .profile-card {
+        display: grid;
+        grid-template-columns: 100px auto;
+        column-gap: 230px;
+    }
+
+    .myinfo {
+        display: flex;
+    grid-template-columns: 100px auto;
+        column-gap: 20px;
+    }
+
+    .myinfo ul {
+        width: 300px;
+    }
+    
+    .skills ul li:not(:last-child) {
+        margin-right: 8px;
+    }
+    .skills ul {
+        display: flex;
+        margin: 0px;
+    }
+
+    .about .description h3 {
+        position:static;
+        font-size: 2.8rem;
+    }
+
+    .about .description p {
+        position:static;
     }
 }
